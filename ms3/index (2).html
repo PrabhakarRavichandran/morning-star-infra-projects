@@ -1,0 +1,1582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Morning Star Infra Projects | Civil Engineering & Construction Chennai</title>
+<meta name="description" content="Premium civil engineering and construction firm in Chennai. Home Construction, Interiors, Structural Repair, Industrial PEB — transparent pricing, engineering-led builds."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<!-- HERO IMAGE PRELOADS — fetched at highest browser priority before render -->
+<link rel="preload" as="image" href="images/hero_home.png" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/home%20construction%202.png" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/hero_interiors.png" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/hero_structural.png" fetchpriority="high"/>
+<link rel="preload" as="image" href="images/hero_industrial.png" fetchpriority="high"/>
+<style id="ms-styles">*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+ --bg:#f6f5f4;--primary:#0a1f44;--gold:#f7bd10;--navy:#1A344E;
+ --white:#ffffff;--text:#2c2c2c;--text-light:#6b6b6b;
+ --primary-d:#071530;--gold-d:#d4a50e;
+ --shadow:0 4px 24px rgba(10,31,68,.12);
+ --radius:12px;--hdr-h:96px;
+ --trans:all .25s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block;width:100%;image-rendering:high-quality}
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(246,245,244,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(10,31,68,.1);min-height:var(--hdr-h);height:auto;transition:var(--trans)}
+#site-header.scrolled{box-shadow:0 2px 20px rgba(10,31,68,.15)}
+ .hdr-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:12px;min-height:var(--hdr-h);height:auto;max-width:1400px;margin:0 auto;padding:8px 24px}
+.hdr-left{display:flex;align-items:center}
+.hdr-city{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--primary);opacity:.6;font-weight:700}
+.hdr-center{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;align-self:center;margin-top:0;order:0;text-align:center;gap:8px}
+.logo-link{display:flex;align-items:center;text-decoration:none}
+.logo-icon{display:flex;align-items:center;justify-content:center}
+.logo-icon img{width:74px;height:74px;object-fit:contain}
+.logo-text{display:flex;flex-direction:column;line-height:1;align-items:center;justify-content:center;text-align:center;align-self:center;margin:0 auto}
+.logo-text span{color:var(--primary)}
+.logo-main{font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;letter-spacing:.05em}
+.logo-sub{font-family:'Space Mono',monospace;font-size:19px;font-weight:700;letter-spacing:.2em;opacity:.8;margin-top:4px}
+.hdr-nav{display:flex;align-items:center;justify-content:center;gap:4px;min-width:140px;flex:0 0 auto;order:0;flex-wrap:wrap}
+.nav-link{font-size:13px;font-weight:500;color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer;transition:var(--trans);white-space:nowrap;pointer-events:auto}
+.nav-link:hover,.nav-link.active{color:var(--primary);background:rgba(10,31,68,.06)}
+.nav-drop-trigger{display:inline-flex;align-items:center;justify-content:flex-start;text-align:left}
+.nav-dropdown{position:relative;z-index:1001}
+.nav-drop-menu{display:none;position:absolute;top:calc(100% + 2px);right:0;background:var(--white);border:1px solid rgba(10,31,68,.1);border-radius:var(--radius);padding:8px;min-width:220px;box-shadow:var(--shadow);z-index:1001;pointer-events:auto;align-items:flex-start}
+.nav-dropdown:hover .nav-drop-menu{display:flex;flex-direction:column;animation:fadeIn .2s ease;align-items:flex-start}
+.drop-link{display:block;width:100%;padding:10px 14px;font-size:13px;color:var(--text);border-radius:8px;transition:var(--trans);pointer-events:auto;cursor:pointer;text-align:left}
+.drop-link:hover{background:rgba(10,31,68,.06);color:var(--primary)}
+.nav-cta{background:var(--primary);color:var(--white)!important;padding:9px 18px;border-radius:8px;font-size:13px;font-weight:600;transition:var(--trans);display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.nav-cta:hover{background:var(--primary-d);transform:translateY(-1px)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.hamburger span{display:block;width:24px;height:2px;background:var(--primary);border-radius:2px;transition:var(--trans)}
+.mobile-menu{display:none;flex-direction:column;padding:16px 24px 24px;gap:4px;background:var(--bg);border-top:1px solid rgba(10,31,68,.1);align-items:flex-end}
+.mobile-menu.open{display:flex}
+.mob-link,.mob-cta{padding:12px 16px;font-size:15px;font-weight:500;color:var(--text);border-radius:8px;cursor:pointer;transition:var(--trans)}
+.mob-link:hover{background:rgba(10,31,68,.06);color:var(--primary)}
+.mob-cta{background:var(--primary);color:var(--white);text-align:center;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:8px}
+
+/* PAGES */
+.page{display:none;min-height:100vh;padding-top:var(--hdr-h);animation:fadeIn .18s cubic-bezier(.25,.46,.45,.94)}
+.page.active{display:block;will-change:opacity,transform}
+@keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+
+/* HERO SECTIONS */
+.hero{position:relative;min-height:90vh;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:0}
+.hero-bg{position:absolute;top:0;left:0;right:0;bottom:0;background-size:cover;background-position:center;background-repeat:no-repeat;z-index:0;width:100%;height:100%;background-attachment:fixed}
+.hero-bg::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.35) 100%)}
+.hero-content{position:relative;z-index:2;max-width:760px;padding:80px 60px;background:rgba(0,0,0,.45);border-radius:12px;backdrop-filter:blur(3px);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+.hero-tag{display:inline-block;background:rgba(247,189,16,.2);border:1px solid rgba(247,189,16,.5);color:var(--gold);font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.15em;padding:6px 14px;border-radius:20px;margin-bottom:20px}
+.hero-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:20px;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+.hero-title span{color:var(--gold)}
+.hero-sub{font-size:clamp(0.9rem,2vw,1.05rem);color:rgba(255,255,255,.95);max-width:560px;margin-bottom:36px;line-height:1.7;text-shadow:0 1px 4px rgba(0,0,0,.4)}
+.hero-btns{display:flex;flex-wrap:wrap;gap:12px}
+
+/* SPLIT COLLAGE HERO (Home page) */
+.hero-split{display:grid;grid-template-columns:55% 45%;min-height:90vh;overflow:hidden;margin-bottom:0}
+.hero-split-left{background:linear-gradient(135deg,var(--primary-d) 0%,var(--primary) 60%,var(--navy) 100%);display:flex;align-items:center;padding:100px 60px;position:relative;overflow:hidden}
+.hero-split-left::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(247,189,16,.07) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero-split-left-inner{position:relative;z-index:1;max-width:520px}
+.hero-split-right{position:relative;overflow:hidden}
+.hero-split-right img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 8s ease;max-width:100%;max-height:100%}
+.hero-split-right:hover img{transform:scale(1.04)}
+.hero-split-right::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,21,48,.35) 0%,transparent 50%);pointer-events:none}
+.hero-split-badge{position:absolute;bottom:32px;left:28px;background:rgba(247,189,16,.95);color:var(--primary);font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.12em;padding:10px 18px;border-radius:6px;z-index:2;backdrop-filter:blur(4px)}
+@media(max-width:1200px){.hero-split{grid-template-columns:48% 52%}.hero-split-left{padding:80px 48px}}
+@media(max-width:1024px){.hero-split{grid-template-columns:45% 55%}.hero-split-left{padding:72px 40px}}
+@media(max-width:960px){.hero-split{grid-template-columns:1fr}.hero-split-left{padding:64px 32px;min-height:60vh}.hero-split-right{min-height:55vw}}
+@media(max-width:768px){.hero-split-left{padding:48px 24px}.hero-split-right{min-height:50vw}.hero-split-badge{bottom:20px;left:16px;font-size:9px;padding:8px 14px}}
+@media(max-width:480px){.hero-split-left{padding:32px 20px;min-height:auto}.hero-split-right{min-height:45vw}.hero-split-badge{display:none}}
+
+/* SPLIT HERO (Story & Certifications pages) */
+.hero-collage{display:grid;grid-template-columns:50% 50%;min-height:62vh;overflow:hidden;padding-top:0;margin-bottom:0}
+.hero-collage-left{background:linear-gradient(145deg,var(--primary-d) 0%,var(--primary) 55%,var(--navy) 100%);display:flex;align-items:center;padding:72px 56px;position:relative;overflow:hidden}
+.hero-collage-left::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(247,189,16,.06) 1px,transparent 1px);background-size:26px 26px;pointer-events:none}
+.hero-collage-left-inner{position:relative;z-index:1;max-width:480px}
+.hero-collage-right{background:var(--primary-d);display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden}
+.hero-collage-right img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 8s ease;max-width:100%;max-height:100%}
+.hero-collage-right:hover img{transform:scale(1.02)}
+.collage-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(247,189,16,.18);border:1px solid rgba(247,189,16,.4);color:var(--gold);font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.15em;padding:7px 16px;border-radius:20px;margin-bottom:20px;font-weight:700}
+@media(max-width:1200px){.hero-collage-left{padding:64px 48px}}
+@media(max-width:1024px){.hero-collage-left{padding:56px 40px}.hero-collage-right{padding:28px}}
+@media(max-width:960px){.hero-collage{grid-template-columns:1fr}.hero-collage-left{padding:56px 32px;min-height:auto}.hero-collage-right{min-height:50vw;padding:24px}}
+@media(max-width:768px){.hero-collage-left{padding:48px 24px}.hero-collage-right{min-height:50vw;padding:20px}}
+@media(max-width:480px){.hero-collage-left{padding:32px 20px;min-height:auto}.hero-collage-right{min-height:45vw;padding:16px}}
+
+/* BUTTONS */
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--primary);font-weight:700;font-size:14px;padding:14px 28px;border-radius:8px;border:none;cursor:pointer;transition:var(--trans);font-family:'Inter',sans-serif;white-space:nowrap;text-decoration:none;vertical-align:middle}
+.btn-primary:hover{background:var(--gold-d);transform:translateY(-2px);box-shadow:0 6px 20px rgba(247,189,16,.4)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--white);font-weight:600;font-size:14px;padding:13px 28px;border-radius:8px;border:2px solid rgba(255,255,255,.4);cursor:pointer;transition:var(--trans);font-family:'Inter',sans-serif;white-space:nowrap;text-decoration:none;vertical-align:middle;box-sizing:border-box}
+.btn-secondary:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+.btn-purple{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:var(--white);font-weight:700;font-size:14px;padding:14px 28px;border-radius:8px;border:none;cursor:pointer;transition:var(--trans);font-family:'Inter',sans-serif;white-space:nowrap;vertical-align:middle}
+.btn-purple:hover{background:var(--primary-d);transform:translateY(-2px);box-shadow:0 6px 20px rgba(10,31,68,.35)}
+.btn-full{width:100%;justify-content:center}
+
+/* SECTIONS */
+.section{padding:80px 0}
+.section-sm{padding:60px 0}
+.page .section:first-of-type{margin-top:0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section-tag{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;font-weight:700;margin-bottom:12px;display:block}
+.section-title{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.6rem,3.5vw,2.8rem);font-weight:700;color:var(--primary);line-height:1.2;margin-bottom:16px}
+.section-title.white{color:var(--white)}
+.section-sub{color:var(--text-light);max-width:600px;line-height:1.7;margin-bottom:40px}
+.divider{width:60px;height:3px;background:linear-gradient(90deg,var(--gold),var(--primary));border-radius:2px;margin:16px 0 32px}
+
+/* GRID LAYOUTS */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+/* CARDS */
+.card{background:var(--white);border-radius:var(--radius);padding:32px;box-shadow:0 2px 12px rgba(10,31,68,.06);border:1px solid rgba(10,31,68,.08);transition:var(--trans)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:rgba(10,31,68,.2)}
+.card-icon{width:52px;height:52px;background:linear-gradient(135deg,rgba(10,31,68,.1),rgba(247,189,16,.1));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:20px;flex-shrink:0}
+.card-title{font-family:'Space Grotesk',sans-serif;font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:10px}
+.card-text{font-size:.9rem;color:var(--text-light);line-height:1.6}
+
+/* DARK SECTION */
+.sec-dark{background:var(--primary)}
+.sec-navy{background:var(--navy)}
+.sec-gold{background:var(--gold)}
+.sec-cream{background:var(--bg)}
+
+/* PRICING */
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.price-card{background:var(--white);border-radius:var(--radius);padding:28px 24px;border:2px solid rgba(10,31,68,.1);text-align:center;transition:var(--trans);position:relative}
+.price-card:hover,.price-card.featured{border-color:var(--primary);transform:translateY(-4px);box-shadow:var(--shadow)}
+.price-card.featured{background:var(--primary)}
+.price-card.featured .price-name,.price-card.featured .price-inc{color:rgba(255,255,255,.8)}
+.price-card.featured .price-amount{color:var(--gold)}
+.price-card.featured .price-badge{display:block}
+.price-badge{display:none;position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--primary);font-size:10px;font-weight:700;padding:4px 12px;border-radius:20px;white-space:nowrap;font-family:'Space Mono',monospace;letter-spacing:.05em}
+.price-name{font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:12px}
+.price-amount{font-size:2rem;font-weight:800;color:var(--primary);font-family:'Space Grotesk',sans-serif;line-height:1}
+.price-inc{font-size:.8rem;color:var(--text-light);margin-top:4px}
+.price-features{list-style:none;margin-top:16px;text-align:left}
+.price-features li{font-size:.82rem;padding:5px 0;border-bottom:1px solid rgba(0,0,0,.06);color:var(--text);display:flex;align-items:flex-start;gap:6px}
+.price-features li::before{content:'';color:var(--gold);font-weight:700;flex-shrink:0}
+.price-card.featured .price-features li{border-color:rgba(255,255,255,.1);color:rgba(255,255,255,.85)}
+.price-card.featured .price-features li::before{color:var(--gold)}
+
+/* TABS (4 Division Dashboard) */
+.div-tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;border-radius:var(--radius);overflow:visible;box-shadow:none}
+.div-tab{position:relative;min-height:480px;cursor:pointer;overflow:hidden;transition:var(--trans);border-radius:16px;border:1px solid rgba(10,31,68,.12);box-shadow:0 10px 28px rgba(10,31,68,.12);background:var(--white)}
+.div-tab-bg{position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;transition:transform .5s ease;pointer-events:none;image-rendering:-webkit-optimize-contrast;image-rendering:high-quality;background-attachment:scroll}
+.div-tab::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.55) 100%);transition:var(--trans);pointer-events:none;z-index:1}
+.div-tab:hover::after{background:linear-gradient(180deg,rgba(0,0,0,.05) 0%,rgba(0,0,0,.4) 100%)}
+.div-tab:hover .div-tab-bg{transform:scale(1.06)}
+.div-tab-content{position:relative;z-index:2;padding:32px 24px;height:100%;display:flex;flex-direction:column;justify-content:flex-end}
+.div-tab-num{font-family:'Space Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.2em;margin-bottom:12px;opacity:.8}
+.div-tab-title{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:10px}
+.div-tab-desc{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.5;margin-bottom:20px}
+.div-tab-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--primary);font-size:12px;font-weight:700;padding:10px 18px;border-radius:6px;transition:var(--trans);pointer-events:none}
+.div-tab:hover .div-tab-cta{background:var(--white)}
+
+.div-slider-mobile{display:none;align-items:center;gap:12px;margin-top:18px}
+.div-slider-label{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);opacity:.65;white-space:nowrap}
+.div-slider-track{flex:1;height:2px;background:rgba(10,31,68,.14);border-radius:999px;position:relative;overflow:hidden}
+.div-slider-track input[type="range"]{width:100%;height:26px;margin:-12px 0 0;background:transparent;appearance:none;-webkit-appearance:none;cursor:pointer}
+.div-slider-track input[type="range"]::-webkit-slider-runnable-track{height:2px;background:transparent}
+.div-slider-track input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:32px;height:32px;border-radius:50%;background:#111;border:1px solid rgba(255,255,255,.9);box-shadow:0 10px 24px rgba(10,31,68,.16);margin-top:-15px}
+.div-slider-track input[type="range"]::-moz-range-track{height:2px;background:transparent}
+.div-slider-track input[type="range"]::-moz-range-thumb{width:32px;height:32px;border-radius:50%;background:#111;border:1px solid rgba(255,255,255,.9);box-shadow:0 10px 24px rgba(10,31,68,.16)}
+
+/* STATS */
+.stats-strip{background:var(--primary);padding:48px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:800;color:var(--gold);line-height:1}
+.stat-label{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:6px}
+
+/* COMPLIANCE BADGES */
+.badge-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(10,31,68,.07);border:1px solid rgba(10,31,68,.15);padding:8px 16px;border-radius:20px;font-size:12px;font-weight:600;color:var(--primary);line-height:1}
+.badge-icon{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;line-height:1}
+
+/* FAQ ACCORDION */
+.faq-item{border-bottom:1px solid rgba(10,31,68,.1)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:20px 0;cursor:pointer;font-weight:600;color:var(--primary);font-size:.95rem;gap:12px;transition:var(--trans)}
+.faq-q:hover{color:var(--primary-d)}
+.faq-icon{font-size:18px;flex-shrink:0;transition:transform .25s ease;color:var(--gold)}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:16px}
+.faq-a p{font-size:.9rem;color:var(--text-light);line-height:1.7}
+
+/* TIMELINE */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),var(--primary))}
+.tl-item{position:relative;margin-bottom:28px}
+.tl-dot{position:absolute;left:-27px;width:16px;height:16px;background:var(--gold);border-radius:50%;border:3px solid var(--white);box-shadow:0 0 0 2px var(--primary)}
+.tl-title{font-weight:700;color:var(--primary);margin-bottom:4px;font-size:.95rem}
+.tl-text{font-size:.85rem;color:var(--text-light);line-height:1.6}
+
+/* CTA BAR */
+.cta-bar{background:linear-gradient(135deg,var(--primary) 0%,var(--navy) 100%);padding:80px 0;text-align:center;margin-top:0}
+.cta-bar h2{font-family:'Space Grotesk',sans-serif;font-size:clamp(1.5rem,3vw,2.4rem);font-weight:700;color:var(--white);margin-bottom:12px}
+.cta-bar p{color:rgba(255,255,255,.75);margin-bottom:32px;font-size:1rem}
+.cta-btns{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;align-items:center}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery-item{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;position:relative}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
+.gallery-item:hover img{transform:scale(1.07)}
+@media(max-width:1024px){.gallery{grid-template-columns:repeat(2,1fr);gap:14px}}
+@media(max-width:768px){.gallery{grid-template-columns:repeat(2,1fr);gap:12px}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr;gap:10px}}
+
+/* MATERIAL SPEC TABLE */
+.spec-table{width:100%;border-collapse:collapse}
+.spec-table th{background:var(--primary);color:var(--white);padding:12px 16px;text-align:left;font-size:.85rem;font-weight:600}
+.spec-table td{padding:12px 16px;border-bottom:1px solid rgba(10,31,68,.08);font-size:.85rem;color:var(--text)}
+.spec-table tr:nth-child(even) td{background:rgba(10,31,68,.03)}
+
+/* FLOATING ACTION BUTTONS */
+.fab{position:fixed;right:20px;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:900;transition:var(--trans);box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.fab svg{width:26px;height:26px}
+.fab:hover{transform:scale(1.1) translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.fab-wa{bottom:90px;background:#25d366;color:var(--white)}
+.fab-call{bottom:28px;background:var(--primary);color:var(--white)}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);z-index:2000;align-items:center;justify-content:center;padding:20px}
+.modal-overlay.open{display:flex}
+.modal-box{background:var(--bg);border-radius:16px;padding:40px;max-width:520px;width:100%;position:relative;box-shadow:0 20px 60px rgba(0,0,0,.4);animation:fadeIn .3s ease}
+.modal-close{position:absolute;top:16px;right:16px;background:rgba(10,31,68,.08);border:none;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:14px;color:var(--primary);display:flex;align-items:center;justify-content:center;transition:var(--trans)}
+.modal-close:hover{background:var(--primary);color:var(--white)}
+.modal-title{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:6px}
+.modal-sub{font-size:.9rem;color:var(--text-light);margin-bottom:24px}
+.quote-form{display:flex;flex-direction:column;gap:12px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-form input,.quote-form select,.quote-form textarea{width:100%;padding:12px 16px;border:1.5px solid rgba(10,31,68,.2);border-radius:8px;font-family:'Inter',sans-serif;font-size:.9rem;background:var(--white);color:var(--text);outline:none;transition:var(--trans)}
+.quote-form input:focus,.quote-form select:focus,.quote-form textarea:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(10,31,68,.1)}
+
+/* FOOTER */
+#site-footer{background:var(--primary-d);color:rgba(255,255,255,.8);padding:64px 0 32px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:48px;margin-bottom:48px}
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start}
+.footer-brand .logo-link{display:flex;align-items:center;justify-content:flex-start;gap:8px}
+.footer-brand .logo-main,.footer-brand .logo-sub{color:var(--white)}
+.footer-brand .logo-text{align-items:flex-start;text-align:left;margin:0}
+.footer-brand p{margin-top:16px;font-size:.88rem;line-height:1.7;opacity:.75;max-width:280px}
+.footer-head{font-family:'Space Grotesk',sans-serif;font-size:.95rem;font-weight:700;color:var(--white);margin-bottom:16px}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-quick{display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+.footer-quick .footer-head{width:100%;text-align:left}
+.footer-links-right{align-items:flex-start;text-align:left}
+.footer-links-right li{width:100%}
+.footer-links-right a{display:block}
+.footer-links a{font-size:.85rem;opacity:.7;transition:var(--trans);cursor:pointer}
+.footer-links a:hover{opacity:1;color:var(--gold)}
+.contact-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px;font-size:.85rem;opacity:.8}
+.contact-icon{display:inline-flex;align-items:center;flex-shrink:0}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:.8rem;opacity:.5}
+
+/* WARRANTY BADGE */
+.warranty-box{background:linear-gradient(135deg,var(--primary),var(--navy));border-radius:var(--radius);padding:32px;color:var(--white);text-align:center}
+.warranty-num{font-size:4rem;font-weight:800;color:var(--gold);font-family:'Space Grotesk',sans-serif;line-height:1}
+.warranty-label{font-size:.95rem;opacity:.85;margin-top:6px}
+
+/* HIGHLIGHT BOX */
+.highlight-box{background:linear-gradient(135deg,rgba(247,189,16,.1),rgba(10,31,68,.06));border:1px solid rgba(247,189,16,.4);border-radius:var(--radius);padding:28px}
+.highlight-title{font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--primary);margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+
+/* MISSION SECTION */
+.mission-section{background:var(--white);border-radius:var(--radius);padding:48px;box-shadow:0 2px 12px rgba(10,31,68,.06)}
+.mission-text{font-size:1.02rem;line-height:1.85;color:var(--text);font-style:italic}
+.mission-text + .mission-text{margin-top:16px}
+
+/* PEB COMPARE */
+.peb-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.peb-col{border-radius:var(--radius);padding:28px;text-align:center}
+.peb-col.peb-trad{background:rgba(10,31,68,.06);border:1px solid rgba(10,31,68,.1)}
+.peb-col.peb-fast{background:var(--primary);color:var(--white)}
+.peb-months{font-size:3rem;font-weight:800;font-family:'Space Grotesk',sans-serif;line-height:1}
+.peb-col.peb-trad .peb-months{color:var(--primary)}
+.peb-col.peb-fast .peb-months{color:var(--gold)}
+.peb-sub{font-size:.85rem;opacity:.75;margin-top:6px}
+.peb-label{font-size:.8rem;font-weight:600;margin-top:12px;opacity:.6;text-transform:uppercase;letter-spacing:.1em}
+
+/* RESPONSIVE */
+@media(max-width:1200px){
+ html{font-size:15px}
+ .container{padding:0 20px}
+ .section{padding:64px 0}
+}
+@media(max-width:1024px){
+ html{font-size:15px}
+ .pricing-grid{grid-template-columns:repeat(2,1fr)}
+ .div-tabs{grid-template-columns:repeat(2,1fr);gap:16px}
+ .div-tab{min-height:360px}
+ .footer-grid{grid-template-columns:1fr 1fr}
+ .stats-grid{grid-template-columns:repeat(2,1fr)}
+ .grid-4{grid-template-columns:repeat(2,1fr)}
+ .hero{min-height:80vh}
+ .hero-content{padding:56px 40px;max-width:100%}
+}
+@media(max-width:768px){
+ html{font-size:14px}
+ .hdr-nav{display:none}
+ .hamburger{display:flex}
+ .hdr-inner{padding:0 16px}
+ .logo-icon img{width:40px;height:40px;object-fit:contain}
+ .logo-main{font-size:16px}
+ .hero{min-height:70vh}
+ .hero-content{padding:48px 24px;max-width:100%}
+ .hero-title{font-size:clamp(1.5rem,4vw,2.5rem)}
+ .grid-2,.grid-3,.grid-4,.pricing-grid,.peb-compare,.footer-grid,.form-row{grid-template-columns:1fr}
+ .div-tabs{grid-template-columns:1fr;gap:14px}
+ .div-tab{min-height:280px}
+ .stats-grid{grid-template-columns:1fr}
+ .gallery{grid-template-columns:1fr}
+ .section{padding:48px 0}
+ .section-sm{padding:40px 0}
+ .modal-box{padding:28px 20px;max-width:95vw}
+ .container{padding:0 16px}
+ .badge-row{flex-direction:column}
+ .badge{width:100%}
+ .footer-grid{gap:32px}
+ .warranty-box{padding:24px}
+ .warranty-num{font-size:3rem}
+}
+@media(max-width:720px){
+ .div-tabs{display:flex;grid-template-columns:none;gap:14px;overflow-x:auto;overflow-y:hidden;padding:0 16px 8px;margin:0 -16px;scroll-snap-type:x mandatory;scroll-padding-inline:16px;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none}
+ .div-tabs::-webkit-scrollbar{display:none}
+ .div-tab{flex:0 0 clamp(240px,72vw,320px);min-height:360px;scroll-snap-align:start}
+ .div-tab-content{padding:28px 20px}
+ .div-slider-mobile{display:flex}
+}
+@media(max-width:600px){
+ html{font-size:13px}
+ .hdr-city{display:none}
+ .hdr-left,.hdr-right{min-width:auto}
+ .logo-icon img{width:36px;height:36px;object-fit:contain}
+ .logo-main{font-size:14px}
+ .logo-sub{font-size:7px}
+ .nav-cta{padding:8px 14px;font-size:12px}
+ .hero{min-height:60vh}
+ .hero-content{padding:36px 18px}
+ .hero-title{font-size:clamp(1.3rem,3.5vw,2rem)}
+ .hero-sub{font-size:clamp(0.85rem,2vw,0.95rem)}
+ .hero-btns{gap:8px}
+ .btn-primary,.btn-secondary,.btn-purple{padding:12px 20px;font-size:13px}
+ .section-title{font-size:clamp(1.4rem,3vw,2rem)}
+ .stats-strip{padding:32px 0}
+ .stat-num{font-size:2rem}
+ .stat-label{font-size:0.75rem}
+ .gallery{grid-template-columns:1fr}
+ .price-card{padding:20px 16px}
+ .price-amount{font-size:1.5rem}
+ .price-features li{font-size:0.75rem;padding:3px 0}
+ .footer-grid{grid-template-columns:1fr;gap:24px}
+ .footer-head{font-size:0.85rem}
+ .footer-links a{font-size:0.8rem}
+ .modal-box{padding:24px 16px}
+ .warranty-num{font-size:2.5rem}
+}
+@media(max-width:480px){
+ html{font-size:12px}
+ .hdr-city{display:none}
+ .logo-icon img{width:32px;height:32px;object-fit:contain}
+ .logo-main{font-size:12px}
+ .hdr-nav{gap:2px}
+ .nav-link{padding:6px 8px;font-size:12px}
+ .hero{min-height:55vh}
+ .hero-content{padding:28px 16px}
+ .hero-title{font-size:clamp(1.2rem,3vw,1.8rem);margin-bottom:16px}
+ .hero-sub{font-size:clamp(0.8rem,1.8vw,0.9rem);margin-bottom:24px}
+ .hero-btns{gap:6px}
+ .btn-primary,.btn-secondary,.btn-purple{padding:10px 16px;font-size:12px}
+ .section{padding:40px 0}
+ .section-sm{padding:32px 0}
+ .section-title{font-size:clamp(1.2rem,2.8vw,1.8rem)}
+ .section-tag{font-size:9px}
+ .container{padding:0 12px;max-width:100%}
+ .div-tab-content{padding:24px 16px}
+ .div-tab-title{font-size:1rem}
+ .stats-strip{padding:28px 0}
+ .stat-num{font-size:1.8rem}
+ .stat-label{font-size:0.7rem}
+ .card{padding:20px}
+ .card-icon{width:44px;height:44px;font-size:20px}
+ .card-title{font-size:1rem}
+ .card-text{font-size:0.85rem}
+ .price-amount{font-size:1.3rem}
+ .badge{padding:6px 12px;font-size:11px}
+ .footer-grid{grid-template-columns:1fr;gap:20px}
+ .footer-copy{font-size:0.75rem}
+ .cta-bar h2{font-size:clamp(1.2rem,2.5vw,1.8rem)}
+ .cta-bar p{font-size:0.9rem}
+ .warranty-num{font-size:2rem}
+ .gallery{grid-template-columns:1fr;gap:12px}
+}
+
+/* LUCIDE ICONS */
+.card-icon .lucide{width:28px;height:28px;color:var(--primary)}
+.badge-icon .lucide{width:15px;height:15px;vertical-align:middle}
+.contact-icon .lucide{width:17px;height:17px;color:var(--gold)}
+</style>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<!-- HEADER -->
+<header id="site-header">
+ <div class="hdr-inner">
+ <div class="hdr-left">
+ <a href="#" class="logo-link" data-page="home">
+ <div class="logo-icon"><img src="images/morning%20star%20logo.jpeg" alt="Morning Star Infra Projects Logo"/></div>
+ </a>
+ </div>
+<div class="hdr-center">
+ <div class="logo-text">
+ <span class="logo-main">MORNING STAR</span>
+ <span class="logo-sub">INFRA PROJECTS</span>
+ </div>
+ <nav class="hdr-nav">
+ <a href="#" data-page="home" class="nav-link">Home</a>
+ <a href="#" data-page="story" class="nav-link">Our Story</a>
+ <div class="nav-dropdown">
+ <span class="nav-link nav-drop-trigger">Divisions ▾</span>
+ <div class="nav-drop-menu">
+ <a href="#" data-page="residential" class="drop-link">Home Construction</a>
+ <a href="#" data-page="interiors" class="drop-link">Interior Fitouts</a>
+ <a href="#" data-page="structural" class="drop-link">Structural Repair</a>
+ <a href="#" data-page="industrial" class="drop-link">Commercial & Industrial</a>
+ </div>
+ </div>
+  <a href="#" data-page="certifications" class="nav-link">Certifications</a>
+  <a href="#" data-page="blog" class="nav-link">Blog</a>
+ </nav>
+ </div>
+ <button class="hamburger" id="hamburger" aria-label="Menu">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+ <div class="mobile-menu" id="mobile-menu">
+ <a href="#" data-page="home" class="mob-link">Home</a>
+ <a href="#" data-page="story" class="mob-link">Our Story</a>
+ <a href="#" data-page="residential" class="mob-link">Home Construction</a>
+ <a href="#" data-page="interiors" class="mob-link">Interior Fitouts</a>
+ <a href="#" data-page="structural" class="mob-link">Structural Repair</a>
+ <a href="#" data-page="industrial" class="mob-link">Commercial & Industrial</a>
+ <a href="#" data-page="certifications" class="mob-link">Certifications</a>
+ <a href="#" data-page="blog" class="mob-link">Blog</a>
+ <a href="tel:+919789032139" class="mob-cta"><i data-lucide="phone" style="width:15px;height:15px"></i> Call Now</a>
+ </div>
+</header>
+
+<!-- PAGES CONTAINER -->
+<main id="main-content">
+ <div id="page-home" class="page active"><!-- HOME SPLIT COLLAGE HERO -->
+<div class="hero-split">
+ <!-- LEFT: Text Panel -->
+ <div class="hero-split-left">
+  <div class="hero-split-left-inner">
+  <h1 class="hero-title">A Complete Ecosystem of<br><span>Structural Excellence</span></h1>
+  <p class="hero-sub" style="font-size:.95rem;margin:16px 0 18px">Because we understand that every structure holds a unique purpose, we have engineered a comprehensively integrated portfolio of construction and design services. Our mission is to provide a seamless, single-point solution that bridges the gap between architectural vision and structural reality.</p>
+  <p class="hero-sub" style="font-size:.95rem;margin:8px 0 18px">Our capabilities span the full spectrum of civil engineering—a perfect blend of structural science and aesthetic precision. Whether we are diagnosing the health of aging buildings with advanced NDT equipment, erecting rapid commercial infrastructure, or executing bespoke turnkey interiors, our projects are guided by post-graduate engineering expertise.</p>
+  <div class="hero-btns">
+   <button class="btn-secondary" onclick="navigate('story')">Our Story</button>
+  </div>
+  </div>
+ </div>
+ <!-- RIGHT: Brand Image Panel -->
+ <div class="hero-split-right">
+  <img src="images/hero_brand.png" alt="Morning Star Infra Projects — Engineering Excellence" loading="eager" decoding="async">
+  <div class="hero-split-badge">15+ YEARS · 500+ PROJECTS</div>
+ </div>
+</div>
+<!-- MISSION -->
+<div class="section sec-cream">
+ <div class="container" style="display:flex;align-items:center;justify-content:center;min-height:260px">
+ <div style="text-align:center;max-width:900px;width:100%">
+ <span class="section-tag" style="display:block;margin-bottom:16px;font-size:12px;letter-spacing:.24em">OUR CORE MISSION</span>
+ <h2 class="section-title" style="font-size:clamp(2.8rem,7vw,4.8rem);line-height:1.02;margin-bottom:10px">Built on Science.<br>Delivered with Integrity.</h2>
+ <div class="divider" style="margin:18px auto 0"></div>
+ </div>
+ </div>
+</div>
+
+<!-- 4 DIVISION DASHBOARD -->
+<div class="section" style="background:var(--white);padding-top:0">
+ <div class="container">
+ <div style="text-align:center;padding:64px 0 40px">
+ <span class="section-tag" style="color:var(--navy);font-size:.82rem;font-weight:500;letter-spacing:.22em;display:block;margin-bottom:6px">FOCUS ON</span>
+ <h2 class="section-title" style="margin:0 auto;color:var(--navy)">Our 4 Divisions</h2>
+ <div class="divider" style="margin:16px auto 0"></div>
+ <p class="section-sub" style="margin:18px auto 0;max-width:920px;color:var(--text);line-height:1.8">We offer this extensive range of services with one uncompromising guarantee: radical financial transparency. By eliminating hidden costs and fragmented contracting, we ensure every space is crafted safely, beautifully, and exactly to your vision.</p>
+ </div>
+ <div class="div-tabs">
+ <div class="div-tab" onclick="navigate('residential')" id="tab-residential">
+ <div class="div-tab-bg" style="background-image:url('images/home%20construction.jpg')"></div>
+ <div class="div-tab-content">
+ <div class="div-tab-num">01 ·</div>
+ <div class="div-tab-title">Home Construction</div>
+ <div class="div-tab-desc">Tax-compliant, engineering-led residential builds with 4 transparent pricing packages.</div>
+ <span class="div-tab-cta">Explore →</span>
+ </div>
+ </div>
+ <div class="div-tab" onclick="navigate('interiors')" id="tab-interiors">
+ <div class="div-tab-bg" style="background-image:url('images/hero_interiors.png')"></div>
+ <div class="div-tab-content">
+ <div class="div-tab-num">02 ·</div>
+ <div class="div-tab-title">Interior Fitouts</div>
+ <div class="div-tab-desc">End-to-end bespoke interiors from 3D design to in-house manufacturing execution.</div>
+ <span class="div-tab-cta">Explore →</span>
+ </div>
+ </div>
+ <div class="div-tab" onclick="navigate('structural')" id="tab-structural">
+ <div class="div-tab-bg" style="background-image:url('images/hero_structural.png')"></div>
+ <div class="div-tab-content">
+ <div class="div-tab-num">03 ·</div>
+ <div class="div-tab-title">Structural Repair & Retrofitting</div>
+ <div class="div-tab-desc">Advanced NDT diagnostics, carbon FRP wrapping, and lifespan extension for aging structures.</div>
+ <span class="div-tab-cta">Explore →</span>
+ </div>
+ </div>
+ <div class="div-tab" onclick="navigate('industrial')" id="tab-industrial">
+ <div class="div-tab-bg" style="background-image:url('images/hero_industrial.png')"></div>
+ <div class="div-tab-content">
+ <div class="div-tab-num">04 ·</div>
+ <div class="div-tab-title">Commercial & Industrial</div>
+ <div class="div-tab-desc">Fast-track PEB construction built for SIPCOT industries, logistics & factory owners.</div>
+ <span class="div-tab-cta">Explore →</span>
+ </div>
+ </div>
+ </div>
+ <div class="div-slider-mobile" aria-label="Division slider position">
+  <span class="div-slider-label">Slide</span>
+  <div class="div-slider-track">
+   <input type="range" id="divisions-slider" min="0" max="1000" value="0" aria-label="Slide through divisions"/>
+  </div>
+ </div>
+ </div>
+</div>
+<!-- CTA BAR -->
+<div class="cta-bar">
+ <div class="container">
+ <h2>Ready to Begin Your Project?</h2>
+ <p>Our engineering team will assess your requirements and provide a detailed, transparent quote within 24 hours.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Request a Free Quote</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp Us</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-residential" class="page"><!-- RESIDENTIAL HERO -->
+<div class="hero">
+ <div class="hero-bg" style="background-image:url('images/home%20construction%202.png')"></div>
+ <div class="hero-content">
+ <span class="hero-tag">HOME CONSTRUCTION · CHENNAI</span>
+ <h1 class="hero-title">Commercial-Grade Engineering<br><span>with Residential Warmth</span></h1>
+ <p class="hero-sub">Tax-compliant, engineering-led home construction. No hidden costs. CMDA/DTCP approval support included.</p>
+ <div class="hero-btns">
+ <button class="btn-primary" onclick="openModal()">Get a Custom Quote →</button>
+ <a href="tel:+919789032139" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> Call Our Engineers</a>
+ </div>
+ </div>
+</div>
+<!-- NO HIDDEN COST GUARANTEE -->
+<div class="section-sm sec-cream">
+ <div class="container">
+ <div class="highlight-box">
+ <div class="grid-2" style="align-items:center;gap:32px">
+ <div>
+ <div class="highlight-title" style="font-size:1.2rem"> The "No Hidden Cost" Guarantee</div>
+ <p style="color:var(--text-light);margin-top:8px;line-height:1.7">Our turnkey quotes embed all committed external works including compound walls and sumps. What you see in our quote is what you pay — down to the last rupee. We provide full support for <strong>CMDA/DTCP approvals</strong> and assist with <strong>home loan documentation</strong>.</p>
+ </div>
+ <div style="display:flex;flex-wrap:wrap;gap:10px">
+ <span class="badge"><span class="badge-icon"><i data-lucide="shield-check"></i></span>No Hidden Charges</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="file-text"></i></span>CMDA/DTCP Support</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="landmark"></i></span>Home Loan Documentation</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="scale"></i></span>5-Year Defect Liability Bond</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="layers"></i></span>ARS/Tata Steel Used</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="package"></i></span>Ramco/Dalmia Cement</span>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- PRICING -->
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <div style="text-align:center;margin-bottom:48px">
+ <span class="section-tag">TRANSPARENT PRICING</span>
+ <h2 class="section-title">Choose Your Package</h2>
+ <div class="divider" style="margin:12px auto 16px"></div>
+ <p class="section-sub" style="margin:0 auto">All packages include engineering-grade materials — ARS/Tata Steel, Ramco/Dalmia Cement, Wire-cut/AAC bricks.</p>
+ </div>
+ <div class="pricing-grid">
+ <div class="price-card">
+ <div class="price-name">Basic Package</div>
+ <div class="price-amount">₹1,980</div>
+ <div class="price-inc">per sq. ft.</div>
+ <ul class="price-features">
+ <li>RCC framed structure</li>
+ <li>Wire-cut bricks</li>
+ <li>Ramco / Dalmia cement</li>
+ <li>Standard electrical & plumbing</li>
+ <li>Basic flooring (vitrified)</li>
+ <li>Compound wall included</li>
+ </ul>
+ <button class="btn-purple btn-full" style="margin-top:20px" onclick="openModal()">Get Quote</button>
+ </div>
+ <div class="price-card featured">
+ <div class="price-badge">MOST POPULAR</div>
+ <div class="price-name">Classic Package</div>
+ <div class="price-amount">₹2,430</div>
+ <div class="price-inc">per sq. ft.</div>
+ <ul class="price-features">
+ <li>All Basic inclusions</li>
+ <li>AAC blocks for better insulation</li>
+ <li>ARS / Tata TMT steel</li>
+ <li>Modular kitchen carcass</li>
+ <li>Branded sanitary fittings</li>
+ <li>False ceiling in living area</li>
+ </ul>
+ <button class="btn-primary btn-full" style="margin-top:20px" onclick="openModal()">Get Quote</button>
+ </div>
+ <div class="price-card">
+ <div class="price-name">Premium Package</div>
+ <div class="price-amount">₹2,860</div>
+ <div class="price-inc">per sq. ft.</div>
+ <ul class="price-features">
+ <li>All Classic inclusions</li>
+ <li>Italian / imported tiles</li>
+ <li>Full modular kitchen</li>
+ <li>Concealed wiring (fire-rated)</li>
+ <li>Premium bathroom fitouts</li>
+ <li>3D design walkthrough</li>
+ </ul>
+ <button class="btn-purple btn-full" style="margin-top:20px" onclick="openModal()">Get Quote</button>
+ </div>
+ <div class="price-card">
+ <div class="price-name">Green Eco Package</div>
+ <div class="price-amount">₹2,990</div>
+ <div class="price-inc">per sq. ft.</div>
+ <ul class="price-features">
+ <li>All Premium inclusions</li>
+ <li>Solar-ready rooftop structure</li>
+ <li>Rainwater harvesting sump</li>
+ <li>Energy-efficient glazing</li>
+ <li>STP-ready plumbing</li>
+ <li>IGBC consultation</li>
+ </ul>
+ <button class="btn-purple btn-full" style="margin-top:20px" onclick="openModal()">Get Quote</button>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- MATERIAL SPECIFICATIONS -->
+<div class="section sec-cream">
+ <div class="container">
+ <div class="grid-2" style="gap:60px;align-items:start">
+ <div>
+ <span class="section-tag">MATERIAL STANDARDS</span>
+ <h2 class="section-title">Industry-Leading Materials</h2>
+ <div class="divider"></div>
+ <table class="spec-table">
+ <thead><tr><th>Component</th><th>Brand / Standard</th><th>Grade</th></tr></thead>
+ <tbody>
+ <tr><td>Structural Steel</td><td>ARS Steel / Tata TMT</td><td>Fe 500D</td></tr>
+ <tr><td>Cement</td><td>Ramco / Dalmia</td><td>OPC 53 / PPC</td></tr>
+ <tr><td>Bricks</td><td>Wire-cut / AAC Blocks</td><td>IS 1077 / IS 2185</td></tr>
+ <tr><td>Aggregates</td><td>Quarried / Crushed</td><td>IS 383</td></tr>
+ <tr><td>Waterproofing</td><td>Dr. Fixit / Fosroc</td><td>IS 2645</td></tr>
+ <tr><td>Electrical</td><td>Havells / Legrand</td><td>BIS Certified</td></tr>
+ <tr><td>Plumbing</td><td>CPVC / UPVC</td><td>IS 15778</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div>
+ <span class="section-tag">PAYMENT SCHEDULE</span>
+ <h2 class="section-title">Financial Sequencing</h2>
+ <div class="divider"></div>
+ <div class="timeline">
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 1 — Mobilization Advance: 20%</div><div class="tl-text">Upon agreement signing. Covers site preparation, foundation design, and material procurement.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 2 — Slab Completion: 20%</div><div class="tl-text">After completion of plinth beam / ground-floor slab, verified by site engineer.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 3 — Roof Slab: 20%</div><div class="tl-text">Upon completion of topmost floor roof slab and structural waterproofing.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 4 — Brick & Plaster: 15%</div><div class="tl-text">Masonry, internal plastering, and external texture coat completion.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 5 — Flooring & Fitouts: 15%</div><div class="tl-text">Flooring, electrical, plumbing, tiling, and modular fitout installation.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">Stage 6 — Handover: 10%</div><div class="tl-text">Final snag clearance, painting completion, and key handover. Defect Liability Bond issued.</div></div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- FAQ -->
+<div class="section" style="background:var(--white)">
+ <div class="container" style="max-width:800px">
+ <span class="section-tag">FAQ</span>
+ <h2 class="section-title">Frequently Asked Questions</h2>
+ <div class="divider"></div>
+ <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is the home construction cost per sq ft in Chennai 2026?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Home construction costs in Chennai in 2026 typically range from ₹1,800 to ₹3,200 per sq. ft. depending on specifications. Morning Star Infra offers 4 packages: Basic (₹1,980), Classic (₹2,430), Premium (₹2,860), and Green Eco (₹2,990) — all fully transparent with no hidden charges.</p></div></div>
+ <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you handle CMDA and DTCP approvals?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Yes. We provide complete documentation support for CMDA/DTCP approvals. The approval fees are borne by the client, but our team handles all technical drawings, coordination, and submission processes.</p></div></div>
+ <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is a Defect Liability Bond and do you provide it?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>A Defect Liability Bond is a legally binding document that commits the contractor to rectify any structural defects within the specified period at no cost to the owner. Morning Star provides a 5-year bond aligned with RERA structural defect standards — issued at handover.</p></div></div>
+ <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Can Morning Star assist with home loan processing?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Absolutely. We provide all technical documents required by banks including structural drawings, BOQ, cost estimates, and stage completion certificates needed for home loan disbursement at each construction milestone.</p></div></div>
+ <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How long does it take to build a standard 2000 sq. ft. house?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>A typical 2000 sq. ft. residential build takes 10–14 months depending on design complexity, number of floors, and approval timelines. We provide a detailed project schedule with milestones before construction begins.</p></div></div>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Build Your Dream Home with Engineering Precision</h2>
+ <p>No hidden costs. No compromises. Just transparent, engineering-led construction.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Request a Free Site Assessment</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp for Pricing</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-interiors" class="page"><!-- INTERIORS HERO -->
+<div class="hero">
+ <div class="hero-bg" style="background-image:url('images/hero_interiors.png')"></div>
+ <div class="hero-content">
+ <span class="hero-tag">INTERIOR FITOUTS · ALL BUILDINGS</span>
+ <h1 class="hero-title">End-to-End Bespoke Interiors.<br><span>3D Design to Execution.</span></h1>
+ <p class="hero-sub">From concept to completion — in-house manufacturing, custom modular kitchens, wardrobes, false ceilings, and premium finishes. Open to all buildings, not just our constructions.</p>
+ <div class="hero-btns">
+ <button class="btn-primary" onclick="openModal()">Book Interior Package →</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp for Pricing</a>
+ </div>
+ </div>
+</div>
+<!-- OFFER BANNER -->
+<div style="background:var(--gold);padding:18px 0">
+ <div class="container" style="text-align:center">
+ <strong style="color:var(--primary);font-size:1rem"> LIMITED OFFER: Book your interior package today and get premium cornice work or side false ceilings in your living area at an exclusively discounted rate!</strong>
+ </div>
+</div>
+<!-- WARRANTY -->
+<div class="section-sm" style="background:var(--white)">
+ <div class="container">
+ <div class="grid-2" style="gap:40px;align-items:center">
+ <div>
+ <span class="section-tag">OUR COMMITMENT</span>
+ <h2 class="section-title">Industry-Leading Warranty</h2>
+ <div class="divider"></div>
+ <p style="color:var(--text-light);line-height:1.7;margin-bottom:20px">Every interior fitout project by Morning Star comes with a comprehensive warranty covering all modular furniture, hardware, and finishes. Our in-house manufacturing ensures quality control from material selection to final installation.</p>
+ <div class="badge-row">
+ <span class="badge"><span class="badge-icon"><i data-lucide="shield-check"></i></span>5–10 Year Warranty</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="factory"></i></span>In-House Manufacturing</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="box"></i></span>3D Design Walkthrough</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="ruler"></i></span>Site-Measured Precision</span>
+ </div>
+ </div>
+ <div class="grid-2" style="gap:16px">
+ <div class="warranty-box">
+ <div class="warranty-num">10</div>
+ <div class="warranty-label">Year Warranty<br>Modular Kitchen</div>
+ </div>
+ <div class="warranty-box">
+ <div class="warranty-num">5</div>
+ <div class="warranty-label">Year Warranty<br>Wardrobes & Storage</div>
+ </div>
+ <div class="warranty-box">
+ <div class="warranty-num">3</div>
+ <div class="warranty-label">Year Warranty<br>False Ceilings & Lighting</div>
+ </div>
+ <div class="warranty-box">
+ <div class="warranty-num">2</div>
+ <div class="warranty-label">Year Warranty<br>Flooring & Finishes</div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- INTERIOR PACKAGES -->
+<div class="section sec-cream">
+ <div class="container">
+ <div style="text-align:center;margin-bottom:48px">
+ <span class="section-tag">INTERIOR PACKAGES</span>
+ <h2 class="section-title">Standard Fitout Packages</h2>
+ <div class="divider" style="margin:12px auto 16px"></div>
+ <p class="section-sub" style="margin:0 auto">Complete turnkey interior solutions. Prices are indicative — final quote based on site measurement and material selection.</p>
+ </div>
+ <div class="grid-2" style="gap:32px;margin-bottom:32px">
+ <div class="price-card" style="text-align:left;padding:36px">
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+ <div class="price-name" style="font-size:1.3rem">2 BHK Package</div>
+ <span class="badge">~800–1000 sq.ft.</span>
+ </div>
+ <div class="price-amount" style="font-size:2.5rem">₹4.5–6L</div>
+ <div class="price-inc" style="margin-bottom:20px">approximate fitout cost</div>
+ <ul class="price-features">
+ <li>Full modular kitchen with granite top</li>
+ <li>2 wardrobes with mirror shutters</li>
+ <li>False ceiling in living & master bedroom</li>
+ <li>TV unit with wall paneling</li>
+ <li>Crockery unit / study table</li>
+ <li>All electrical points (concealed)</li>
+ <li>Painting — 2 coats washable emulsion</li>
+ <li>3D design + site coordination</li>
+ </ul>
+ <button class="btn-purple btn-full" style="margin-top:24px" onclick="openModal()">Get 2BHK Quote →</button>
+ </div>
+ <div class="price-card featured" style="text-align:left;padding:36px">
+ <div class="price-badge">MOST CHOSEN</div>
+ <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+ <div class="price-name" style="font-size:1.3rem">3 BHK Package</div>
+ <span class="badge" style="background:rgba(247,189,16,.2);border-color:rgba(247,189,16,.5);color:var(--gold)">~1200–1500 sq.ft.</span>
+ </div>
+ <div class="price-amount" style="font-size:2.5rem">₹7–10L</div>
+ <div class="price-inc" style="margin-bottom:20px">approximate fitout cost</div>
+ <ul class="price-features">
+ <li>All 2BHK inclusions</li>
+ <li>3 wardrobes with premium hardware</li>
+ <li>Master bedroom accent wall</li>
+ <li>Pooja unit / home office nook</li>
+ <li>Shoe rack & foyer console</li>
+ <li>Premium false ceiling with coves</li>
+ <li>Designer bathroom vanity (1 unit)</li>
+ <li>Priority scheduling & dedicated PM</li>
+ </ul>
+ <button class="btn-primary btn-full" style="margin-top:24px" onclick="openModal()">Get 3BHK Quote →</button>
+ </div>
+ </div>
+ <!-- SERVICE SCOPE -->
+ <div class="highlight-box">
+ <div class="highlight-title"> <span><i data-lucide="building-2" style="width:20px;height:20px;flex-shrink:0"></i> <span><i data-lucide="building-2" style="width:20px;height:20px;flex-shrink:0"></i> We Work on ALL Buildings — Not Just Our Own Constructions</span></span></div>
+ <p style="color:var(--text-light);margin-top:8px;line-height:1.7">Whether you have a newly built home from another contractor, a resale apartment, or a commercial office space — our interior team can transform it. We assess existing conditions, provide a detailed fitout plan, and execute with our in-house manufacturing unit.</p>
+ </div>
+ </div>
+</div>
+<!-- SERVICES BREAKDOWN -->
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <span class="section-tag">WHAT WE COVER</span>
+ <h2 class="section-title">Complete Interior Services</h2>
+ <div class="divider"></div>
+ <div class="grid-4">
+ <div class="card"><div class="card-icon"><i data-lucide="utensils-crossed"></i></div><div class="card-title">Modular Kitchen</div><div class="card-text">Custom-designed, factory-manufactured modular kitchens with 10-year warranty on shutters and hardware</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="archive"></i></div><div class="card-title">Wardrobes & Storage</div><div class="card-text">Floor-to-ceiling wardrobes, walk-in closets, and multi-utility storage solutions with premium fittings</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="zap"></i></div><div class="card-title">False Ceilings & Lighting</div><div class="card-text">Gypsum and POP false ceilings, cove lighting, LED strips, and architectural lighting design</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="image"></i></div><div class="card-title">Wall Paneling & Décor</div><div class="card-text">Fluted panels, veneer finishes, wallpapers, and bespoke accent walls for a premium look</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="sofa"></i></div><div class="card-title">Living Area Fitouts</div><div class="card-text">TV units, entertainment centers, sofa backs, and crockery units — all site-measured and custom-built</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="droplets"></i></div><div class="card-title">Bathroom Fitouts</div><div class="card-text">Vanity units, mirror cabinets, towel rails, and designer sanitary accessories</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="door-open"></i></div><div class="card-title">Foyer & Entrance</div><div class="card-text">Statement entrance design, shoe racks, console tables, and decorative elements for first impressions</div></div>
+ <div class="card"><div class="card-icon"><i data-lucide="brush"></i></div><div class="card-title">Painting & Finishes</div><div class="card-text">Luxury emulsions, textured finishes, anti-fungal paints, and premium exterior coatings</div></div>
+ </div>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Transform Your Space Today</h2>
+ <p>Book your interior consultation and get your 3D design within 5 working days — free of charge.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Book Free 3D Design Consultation</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="image" style="width:16px;height:16px"></i> Share Your Space Photos</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-structural" class="page"><!-- STRUCTURAL HERO -->
+<div class="hero">
+ <div class="hero-bg" style="background-image:url('images/hero_structural.png')"></div>
+ <div class="hero-content">
+ <span class="hero-tag">STRUCTURAL REPAIR · B2B & B2C</span>
+ <h1 class="hero-title">Advanced Structural Diagnostics<br><span>& Lifespan Extension</span></h1>
+ <p class="hero-sub">Owning our own NDT equipment, Morning Star brings clinical precision to structural diagnosis — from rebound hammer testing to carbon FRP wrapping and full jacketing solutions.</p>
+ <div class="hero-btns">
+ <button class="btn-primary" onclick="openModal()">Request a Structural Audit →</button>
+ <a href="tel:+919789032139" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> Emergency Consultation</a>
+ </div>
+ </div>
+</div>
+<!-- NDT AUTHORITY -->
+<div class="stats-strip">
+ <div class="container">
+ <div class="stats-grid">
+ <div><div class="stat-num">IS 13311-1</div><div class="stat-label">Ultrasonic Pulse Velocity (UPV)</div></div>
+ <div><div class="stat-num">IS 13311-2</div><div class="stat-label">Rebound Hammer Testing</div></div>
+ <div><div class="stat-num">IS 516</div><div class="stat-label">Concrete Core Strength Testing</div></div>
+ <div><div class="stat-num">Form B</div><div class="stat-label">Structural Stability Certificates Issued</div></div>
+ </div>
+ </div>
+</div>
+<!-- NDT HIGHLIGHT -->
+<div class="section-sm sec-cream">
+ <div class="container">
+ <div class="highlight-box">
+ <div class="grid-2" style="align-items:center;gap:32px">
+ <div>
+ <div class="highlight-title" style="font-size:1.2rem"> <span><i data-lucide="scan-search" style="width:20px;height:20px;flex-shrink:0"></i> <span><i data-lucide="scan-search" style="width:20px;height:20px;flex-shrink:0"></i> We Own Our NDT Equipment — No Third-Party Delays</span></span></div>
+ <p style="color:var(--text-light);margin-top:8px;line-height:1.7">Unlike most contractors who outsource Non-Destructive Testing, Morning Star owns its specialized NDT equipment. This means faster site assessments, lower diagnostic costs, and complete control over data integrity. Our registered structural engineers personally interpret results and certify reports.</p>
+ </div>
+ <div style="display:flex;flex-wrap:wrap;gap:10px">
+ <span class="badge"><span class="badge-icon"><i data-lucide="waves"></i></span>Ultrasonic Pulse Velocity</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="hammer"></i></span>Rebound Hammer</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="test-tube-2"></i></span>Concrete Core Testing</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="zap"></i></span>Half-Cell Potential (Rebar Corrosion)</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="badge-check"></i></span>Form B Certified</span>
+ <span class="badge"><span class="badge-icon"><i data-lucide="landmark"></i></span>TN Public Buildings Act</span>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- CAPABILITIES -->
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <div style="text-align:center;margin-bottom:48px">
+ <span class="section-tag">REPAIR CAPABILITIES</span>
+ <h2 class="section-title">Our Repair & Retrofitting Arsenal</h2>
+ <div class="divider" style="margin:12px auto 16px"></div>
+ </div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-icon"><i data-lucide="layers"></i></div>
+         <div class="card-title">Micro-Concreting</div>
+ <div class="card-text">Precision injection and micro-concrete application to restore degraded concrete sections. Restores full structural capacity of damaged columns, beams, and slabs without demolition.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="wind"></i></div>
+         <div class="card-title">Carbon FRP Wrapping</div>
+ <div class="card-text">Carbon Fiber Reinforced Polymer wrapping of columns and beams for seismic retrofitting and load capacity enhancement. Dramatically extends structural life without adding dead load.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="columns-3"></i></div>
+         <div class="card-title">Structural Jacketing</div>
+ <div class="card-text">RCC, steel, or GFRP jacketing of columns and beams to increase cross-section and load capacity. Ideal for buildings undergoing additional floor construction or usage change.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="wrench"></i></div>
+ <div class="card-title">Crack Injection & Repair</div>
+ <div class="card-text">Epoxy and polyurethane resin injection for structural and non-structural cracks. Halts moisture ingress, prevents rebar corrosion, and seals the concrete matrix permanently.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="shield"></i></div>
+         <div class="card-title">Anti-Carbonation Coating</div>
+ <div class="card-text">Specialized coatings to halt the carbonation process in aging concrete, protecting rebar from corrosion and extending the building's service life by 20–30 years.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="pencil-ruler"></i></div>
+         <div class="card-title">Structural Engineering Design</div>
+ <div class="card-text">Forensic structural analysis, load assessment, and retrofitting design by our post-graduate engineers. Includes issuance of Form B Structural Stability Certificate under TN law.</div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- PROCESS -->
+<div class="section sec-cream">
+ <div class="container">
+ <div class="grid-2" style="gap:60px;align-items:start">
+ <div>
+ <span class="section-tag">OUR PROCESS</span>
+ <h2 class="section-title">From Diagnosis to Certification</h2>
+ <div class="divider"></div>
+ <div class="timeline">
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">1. Visual Inspection & Distress Survey</div><div class="tl-text">Our engineers conduct a comprehensive visual survey, mapping spalling, cracking, efflorescence, and rebar exposure across the structure.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">2. NDT Testing & Concrete Core Analysis</div><div class="tl-text">UPV, rebound hammer, and core testing are conducted using our owned equipment per IS 13311 and IS 516 standards.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">3. Structural Assessment Report</div><div class="tl-text">Detailed engineering report outlining concrete strength, rebar condition, and structural adequacy — with photographic evidence.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">4. Repair Specification & BOQ</div><div class="tl-text">A complete repair methodology, material specifications, and transparent bill of quantities — before a single rupee is committed.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">5. Supervised Repair Execution</div><div class="tl-text">All repair work executed by trained applicators under the direct supervision of our structural engineers.</div></div>
+ <div class="tl-item"><div class="tl-dot"></div><div class="tl-title">6. Form B Certification</div><div class="tl-text">Post-repair, we issue the Structural Stability Certificate (Form B) under the Tamil Nadu Public Buildings Act — legally certifying the building's restored integrity.</div></div>
+ </div>
+ </div>
+ <div>
+ <span class="section-tag">WHO WE SERVE</span>
+ <h2 class="section-title">Both Residential & Commercial</h2>
+ <div class="divider"></div>
+ <div style="display:flex;flex-direction:column;gap:16px">
+ <div class="card">
+ <div class="card-title" style="display:flex;align-items:center;gap:8px"><i data-lucide="home" style="width:18px;height:18px;color:var(--gold);flex-shrink:0"></i> Residential (B2C)</div>
+ <div class="card-text">Old houses with concrete spalling, water seepage, cracked beams or columns. Especially critical for buildings aged 15+ years in coastal Chennai environments where salt-induced corrosion is prevalent.</div>
+ </div>
+ <div class="card">
+ <div class="card-title"> Commercial & Industrial (B2B)</div>
+ <div class="card-text">Factories, warehouses, office buildings, and public structures requiring periodic structural audits, maintenance certifications, or retrofitting for additional loads and seismic compliance.</div>
+ </div>
+ <div class="card">
+ <div class="card-title"> Historical & Government Buildings</div>
+ <div class="card-text">Specialized restoration methodology for heritage structures requiring sensitivity to original materials while achieving modern structural performance standards.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Is Your Structure Due for an Audit?</h2>
+ <p>Buildings aged 10+ years should undergo periodic NDT assessment. Our team provides rapid, non-invasive diagnostics with certified reports.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Book a Structural Audit</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="camera" style="width:16px;height:16px"></i> Share Photos for Assessment</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-industrial" class="page"><!-- INDUSTRIAL HERO -->
+<div class="hero">
+ <div class="hero-bg" style="background-image:url('images/hero_industrial.png')"></div>
+ <div class="hero-content">
+ <span class="hero-tag">COMMERCIAL & INDUSTRIAL · B2B</span>
+ <h1 class="hero-title">Fast-Track PEB Construction.<br><span>Built for Scale & Compliance.</span></h1>
+ <p class="hero-sub">Pre-Engineered Buildings completed in 4–8 months vs. 12–18 months traditional construction. Coordinated with equipment manufacturers for ergonomic, energy-efficient industrial plans.</p>
+ <div class="hero-btns">
+ <button class="btn-primary" onclick="openModal()">Request Free Warehouse Layout →</button>
+ <a href="tel:+919789032139" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> Talk to Our Industrial Team</a>
+ </div>
+ </div>
+</div>
+<!-- SPEED COMPARISON -->
+<div class="section-sm" style="background:var(--white)">
+ <div class="container">
+ <div style="text-align:center;margin-bottom:32px">
+ <span class="section-tag">THE PEB ADVANTAGE</span>
+ <h2 class="section-title">Why Choose Pre-Engineered Buildings?</h2>
+ <div class="divider" style="margin:12px auto 16px"></div>
+ </div>
+ <div class="peb-compare" style="max-width:600px;margin:0 auto 48px">
+ <div class="peb-col peb-trad">
+ <div class="peb-label">Traditional Construction</div>
+ <div class="peb-months">12–18</div>
+ <div class="peb-sub">months to complete</div>
+ </div>
+ <div class="peb-col peb-fast">
+ <div class="peb-label">PEB Construction</div>
+ <div class="peb-months">4–8</div>
+ <div class="peb-sub">months to complete</div>
+ </div>
+ </div>
+ <div class="grid-4">
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="zap"></i></div>
+         <div class="card-title">50% Faster</div>
+ <div class="card-text">Factory-fabricated steel components assembled on-site with precision — zero weather delays</div>
+ </div>
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="indian-rupee"></i></div>
+         <div class="card-title">₹700–₹900+ / sq.ft.</div>
+ <div class="card-text">Competitive pricing depending on clear height, crane integration, and flooring specifications</div>
+ </div>
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="columns-3"></i></div>
+         <div class="card-title">High-Strength Steel</div>
+ <div class="card-text">Primary frames, rafters, purlins engineered for superior structural integrity and clear spans</div>
+ </div>
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="flame"></i></div>
+         <div class="card-title">Fire-Rated Cladding</div>
+ <div class="card-text">Rockwool or glasswool insulated cladding panels providing thermal comfort and fireproofing</div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- COMPLIANCE -->
+<div class="section sec-cream">
+ <div class="container">
+ <div class="grid-2" style="gap:60px;align-items:start">
+ <div>
+ <span class="section-tag">LEGAL COMPLIANCE</span>
+ <h2 class="section-title">Form B & Form C Authority</h2>
+ <div class="divider"></div>
+ <p style="color:var(--text-light);line-height:1.7;margin-bottom:24px">As registered structural engineers, Morning Star handles forensic audits and issues the mandatory <strong>Form B (Structural Stability Certificate)</strong> required under the Tamil Nadu Public Buildings Act. We also assist in securing <strong>Form C (Fire Safety Certificate)</strong> — making us your single-point compliance partner.</p>
+ <div style="display:flex;flex-direction:column;gap:12px">
+ <div class="highlight-box">
+ <div class="highlight-title"><span><i data-lucide="file-badge" style="width:18px;height:18px;flex-shrink:0"></i><span><i data-lucide="file-badge" style="width:18px;height:18px;flex-shrink:0"></i> Form B — Structural Stability Certificate</span></span></div>
+ <p style="color:var(--text-light);margin-top:6px;font-size:.9rem">Mandatory for all public and commercial buildings under TN Public Buildings Act. Issued by our registered structural engineers after comprehensive structural assessment and verification.</p>
+ </div>
+ <div class="highlight-box">
+ <div class="highlight-title"><span><i data-lucide="flame" style="width:18px;height:18px;flex-shrink:0"></i><span><i data-lucide="flame" style="width:18px;height:18px;flex-shrink:0"></i> Form C — Fire Safety Certificate</span></span></div>
+ <p style="color:var(--text-light);margin-top:6px;font-size:.9rem">We coordinate with fire safety consultants and the Tamil Nadu Fire & Rescue Services to obtain Form C for industrial facilities, ensuring full occupancy compliance.</p>
+ </div>
+ </div>
+ </div>
+ <div>
+ <span class="section-tag">SERVICES SCOPE</span>
+ <h2 class="section-title">What We Build</h2>
+ <div class="divider"></div>
+ <div style="display:flex;flex-direction:column;gap:12px">
+ <div class="card"><div class="card-title"> Factory & Manufacturing Sheds</div><div class="card-text">SIPCOT-compliant industrial sheds with material flow planning, overhead crane integration, and equipment manufacturer coordination.</div></div>
+ <div class="card"><div class="card-title"> Warehouses & Logistics Hubs</div><div class="card-text">High clear-height warehouses (up to 12m+), loading docks, dock levelers, and automated racking system support.</div></div>
+ <div class="card"><div class="card-title"> Automobile Showrooms & Service Centers</div><div class="card-text">Column-free showroom spans, service pits, vehicle lifts, and HVAC-ready structures for automobile brands.</div></div>
+ <div class="card"><div class="card-title" style="display:flex;align-items:center;gap:8px"><i data-lucide="building-2" style="width:18px;height:18px;color:var(--gold);flex-shrink:0"></i> Commercial Complexes</div><div class="card-text">Retail strips, office blocks, and mixed-use commercial developments with PEB speed and traditional aesthetic finishes.</div></div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<!-- TECHNICAL SPECS -->
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <span class="section-tag">TECHNICAL SPECIFICATIONS</span>
+ <h2 class="section-title">PEB Construction Standards</h2>
+ <div class="divider"></div>
+ <table class="spec-table">
+ <thead><tr><th>Component</th><th>Specification</th><th>Standard</th></tr></thead>
+ <tbody>
+ <tr><td>Primary Framing</td><td>Tapered / parallel flange I-sections (high-strength steel)</td><td>IS 2062 / IS 12778</td></tr>
+ <tr><td>Secondary Framing</td><td>Cold-formed Z/C purlins and girts</td><td>IS 811</td></tr>
+ <tr><td>Roof Cladding</td><td>Colour-coated trapezoidal profile sheets</td><td>IS 14246</td></tr>
+ <tr><td>Insulation</td><td>Rockwool / Glasswool (50–100mm)</td><td>IS 8183</td></tr>
+ <tr><td>Foundation</td><td>Isolated / combined RCC footings (site-specific design)</td><td>IS 456 / IS 2911</td></tr>
+ <tr><td>Flooring</td><td>M30 industrial floor slab with hardener topping</td><td>IS 456 / TR 34</td></tr>
+ <tr><td>Crane Beam</td><td>Hot-rolled wide flange sections (EOT/HOT crane ready)</td><td>IS 800</td></tr>
+ </tbody>
+ </table>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Get Your Factory or Warehouse Built Faster</h2>
+ <p>Free layout consultation. SIPCOT-compliant designs. Form B & Form C handled end-to-end.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Request Free Warehouse Layout Consultation</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> Get a Custom PEB Estimate</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-story" class="page"><!-- STORY HERO -->
+<div class="hero-collage" style="grid-template-columns:1fr;min-height:62vh">
+  <div class="hero-collage-left" style="min-height:62vh;justify-content:center;text-align:center;padding:80px 32px">
+    <div class="hero-collage-left-inner" style="max-width:840px;margin:0 auto">
+      <h1 class="hero-title" style="font-size:clamp(2.4rem,5.4vw,4.4rem);font-weight:800;line-height:1.04">Built on <span>Engineering</span>,<br>Sustained by <span>Trust</span></h1>
+      <p class="hero-sub" style="font-size:1.08rem;margin:18px auto 0;max-width:760px">From a single structural engineering practice in Chennai to a multi-disciplinary civil construction group — our story is one of uncompromising technical integrity.</p>
+    </div>
+  </div>
+</div>
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <div class="grid-2" style="gap:60px;align-items:center">
+ <div>
+ <span class="section-tag" style="font-size:14px;font-weight:700">WHO WE ARE</span>
+ <h2 class="section-title" style="font-size:clamp(2rem,4.5vw,3.5rem);font-weight:900">Morning Star Infra Projects</h2>
+ <div class="divider"></div>
+ <div class="mission-section">
+ <p class="mission-text">Morning Star Infra Projects was founded by post-graduate structural engineers with a singular conviction: that civil construction in India deserved the same level of engineering rigor that infrastructure projects receive.</p>
+ <p class="mission-text" style="margin-top:16px">Based in Chennai, Tamil Nadu, we have grown from a structural consultancy into a fully integrated civil engineering and contracting group — offering home construction, interior fitouts, structural repair, and industrial construction under one roof.</p>
+ <p class="mission-text" style="margin-top:16px">Every project we undertake is signed off by a registered structural engineer. Every quote we issue is fully transparent. Every material we use is industry-grade and verifiable. This is not a marketing promise — it is our operating standard.</p>
+ </div>
+ </div>
+ <div style="display:flex;flex-direction:column;gap:20px">
+ <div class="card">
+ <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+           <div class="card-title">Post-Graduate Engineering Leadership</div>
+ <div class="card-text">Our founding team holds post-graduate degrees in structural engineering, ensuring every design decision is grounded in advanced technical knowledge.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="map-pin"></i></div>
+           <div class="card-title">Chennai-Based, Tamil Nadu-Wide</div>
+ <div class="card-text">Headquartered in Chennai with project experience across Tamil Nadu — including SIPCOT industrial estates and CMDA-regulated zones.</div>
+ </div>
+ <div class="card">
+ <div class="card-icon"><i data-lucide="badge-check"></i></div>
+           <div class="card-title">Registered Structural Engineers</div>
+ <div class="card-text">Authorized to issue Form B Structural Stability Certificates under the Tamil Nadu Public Buildings Act — a credential few contractors hold.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<div class="stats-strip">
+ <div class="container">
+ <div class="stats-grid">
+ <div><div class="stat-num">2009</div><div class="stat-label">Year Founded in Chennai</div></div>
+ <div><div class="stat-num">500+</div><div class="stat-label">Projects Across Tamil Nadu</div></div>
+ <div><div class="stat-num">4</div><div class="stat-label">Integrated Service Divisions</div></div>
+ <div><div class="stat-num">100%</div><div class="stat-label">Client Satisfaction Commitment</div></div>
+ </div>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Let's Build Something Great Together</h2>
+ <p>Tell us about your project and we'll connect you with the right engineering team.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Start a Conversation</button>
+ <a href="https://wa.me/919789032139" target="_blank" class="btn-secondary"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp Our Team</a>
+ </div>
+ </div>
+</div></div>
+ <div id="page-certifications" class="page"><!-- CERT HERO -->
+<div class="hero-collage" style="grid-template-columns:1fr;min-height:62vh">
+  <div class="hero-collage-left" style="min-height:62vh;justify-content:center;text-align:center;padding:84px 32px">
+    <div class="hero-collage-left-inner" style="max-width:900px;margin:0 auto">
+      <h1 class="hero-title" style="font-size:clamp(2.4rem,5.6vw,4.5rem);font-weight:800;line-height:1.05">Engineering Authority<br><span>You Can Verify</span></h1>
+      <p class="hero-sub" style="font-size:1.08rem;margin:18px auto 0;max-width:820px">Our certifications, registrations, and BIS code compliance are not decorative — they are our license to operate at the highest levels of structural safety.</p>
+    </div>
+  </div>
+</div>
+<div class="section" style="background:var(--white)">
+ <div class="container">
+ <div style="text-align:center;margin-bottom:48px">
+ <span class="section-tag" style="font-size:14px;font-weight:700">OUR CREDENTIALS</span>
+ <h2 class="section-title" style="font-size:clamp(2rem,4.5vw,3.5rem);font-weight:900">Certifications & Registrations</h2>
+ <div class="divider" style="margin:12px auto 16px"></div>
+ </div>
+ <div class="grid-3">
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="file-badge" style="width:36px;height:36px"></i></div>
+         <div class="card-title">Form B Authority</div>
+ <div class="card-text">Licensed to issue Structural Stability Certificates (Form B) under the Tamil Nadu Public Buildings (Regulation of Construction) Act — mandatory for all commercial and public buildings.</div>
+ </div>
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="hard-hat" style="width:36px;height:36px"></i></div>
+         <div class="card-title">Registered Structural Engineers</div>
+ <div class="card-text">All structural designs, assessments, and certifications are signed and sealed by registered structural engineers with post-graduate qualifications recognized by Tamil Nadu authorities.</div>
+ </div>
+ <div class="card" style="text-align:center">
+ <div class="card-icon" style="margin:0 auto 16px"><i data-lucide="flame" style="width:36px;height:36px"></i></div>
+         <div class="card-title">Form C Coordination</div>
+ <div class="card-text">Authorized to assist and coordinate Form C (Fire Safety Certificate) applications with Tamil Nadu Fire & Rescue Services for industrial and commercial buildings.</div>
+ </div>
+ </div>
+ </div>
+</div>
+<div class="section sec-cream">
+ <div class="container">
+ <span class="section-tag">BIS CODE COMPLIANCE</span>
+ <h2 class="section-title">Bureau of Indian Standards</h2>
+ <div class="divider"></div>
+ <div class="grid-2" style="gap:32px">
+ <div>
+ <div style="display:flex;flex-direction:column;gap:12px">
+ <div class="card"><div class="card-title">IS 13311 Part 1 — Ultrasonic Pulse Velocity</div><div class="card-text">Method of non-destructive testing of concrete. Morning Star's NDT equipment is calibrated and operated strictly per IS 13311 Part 1 for pulse velocity measurement to assess concrete quality and uniformity.</div></div>
+ <div class="card"><div class="card-title">IS 13311 Part 2 — Rebound Hammer</div><div class="card-text">Assessment of concrete surface hardness and estimation of compressive strength per IS 13311 Part 2. Used alongside UPV for comprehensive concrete condition profiling.</div></div>
+ <div class="card"><div class="card-title">IS 516 — Concrete Core Testing</div><div class="card-text">Standard methods of test for strength of concrete. Core samples extracted from existing structures are tested per IS 516 to establish actual in-situ concrete strength.</div></div>
+ </div>
+ </div>
+ <div>
+ <div style="display:flex;flex-direction:column;gap:12px">
+ <div class="card"><div class="card-title">IS 456 — Plain & Reinforced Concrete</div><div class="card-text">All new construction and repair work conforms to IS 456:2000 — the primary Indian code for plain and reinforced concrete design, including mix design, durability, and cover specifications.</div></div>
+ <div class="card"><div class="card-title">IS 800 — Steel Structures</div><div class="card-text">All PEB and structural steel designs follow IS 800:2007 — the general construction in steel code — for member design, connections, and fabrication standards.</div></div>
+ <div class="card"><div class="card-title">IS 1893 — Seismic Design</div><div class="card-text">All structural designs consider seismic zone requirements per IS 1893 — essential for Chennai's Zone II/III classification — ensuring earthquake-resistant construction.</div></div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<div class="cta-bar">
+ <div class="container">
+ <h2>Work with Engineers You Can Trust</h2>
+ <p>Every certificate we issue is backed by qualified engineers and verifiable test data.</p>
+ <div class="cta-btns">
+ <button class="btn-primary" onclick="openModal()">Request a Certified Structural Assessment</button>
+ <a href="tel:+919789032139" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> Speak to Our Engineers</a>
+ </div>
+ </div>
+</div></div>
+<!-- BLOG PAGE (SEO) -->
+<div id="page-blog" class="page">
+  <div class="hero-collage" style="grid-template-columns:1fr;min-height:56vh">
+    <div class="hero-collage-left" style="min-height:56vh;justify-content:center;text-align:center;padding:72px 24px">
+      <div class="hero-collage-left-inner" style="max-width:900px;margin:0 auto">
+        <h1 class="hero-title" style="font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;line-height:1.06">Civil Engineering, Construction Tips & Case Studies — <span>Morning Star Blog</span></h1>
+        <p class="hero-sub" style="font-size:1.02rem;margin:18px auto 0;max-width:820px;font-weight:700">Actionable articles on home construction, structural repair, interiors, and industrial PEB best practices — written by our engineering team to help you make informed decisions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--white)">
+    <div class="container">
+      <span class="section-tag">BLOG</span>
+      <h2 class="section-title">Latest Posts & Guides</h2>
+      <div class="divider"></div>
+      <div class="grid-3" style="gap:24px;margin-top:12px">
+        <article class="card">
+          <div style="font-weight:700;color:var(--primary);margin-bottom:8px">How to Choose the Right Home Construction Package</div>
+          <p class="card-text">Discover what to look for in materials, warranties, and transparent pricing to avoid hidden costs and ensure structural longevity.</p>
+          <a class="btn-primary" href="#" onclick="navigate('residential')">Read Guide →</a>
+        </article>
+        <article class="card">
+          <div style="font-weight:700;color:var(--primary);margin-bottom:8px">Structural Repair: When to Retrofit vs Replace</div>
+          <p class="card-text">A practical approach to non-destructive testing, cost-benefit analysis and carbon FRP solutions for lifespan extension.</p>
+          <a class="btn-primary" href="#" onclick="navigate('structural')">Read Guide →</a>
+        </article>
+        <article class="card">
+          <div style="font-weight:700;color:var(--primary);margin-bottom:8px">PEB vs Conventional — Which Is Faster & Cheaper?</div>
+          <p class="card-text">Compare pre-engineered buildings with traditional construction across timelines, costs, and compliance for industrial projects.</p>
+          <a class="btn-primary" href="#" onclick="navigate('industrial')">Read Guide →</a>
+        </article>
+      </div>
+
+      <div style="margin-top:28px">
+        <h3 style="font-family:Space Grotesk, sans-serif;color:var(--primary)">About Morning Star Infra Projects — Architectural Works & Expertise</h3>
+        <p style="color:var(--text-light);line-height:1.8">Morning Star Infra Projects is a Chennai-based civil engineering and architectural practice delivering end-to-end residential construction, commercial PEB projects, and bespoke architectural works. Our services include architectural design, structural engineering, turnkey interiors, and site-supervised construction — keywords: <strong>home construction Chennai</strong>, <strong>architectural design Chennai</strong>, <strong>structural engineer Chennai</strong>, <strong>interior fitouts Chennai</strong>, and <strong>industrial PEB contractors</strong>. We combine post-graduate structural engineering with experienced architectural teams to produce modern homes, efficient industrial warehouses, and premium interior fitouts that comply with IS codes and local CMDA/DTCP regulations. Core competencies: Form B structural certification, NDT diagnostics (UPV, rebound hammer), TMT/ARS steel integration, sustainable material selection, and RERA-aligned defect liability commitments. Our portfolio highlights adaptive architectural design, space-optimised layouts, daylighting strategies, and climate-responsive facades — all documented with case studies and project timelines to support search intent for queries like "architectural firm Chennai", "structural repair Chennai", and "best interior designers Chennai".</p>
+      </div>
+
+      <div style="margin-top:28px">
+        <h3 style="font-family:Space Grotesk, sans-serif;color:var(--primary)">Key Topics Covered</h3>
+        <ul style="color:var(--text-light);line-height:1.8">
+          <li>Home Construction Packages & Pricing Transparency</li>
+          <li>Interior Fitouts: Design to Execution</li>
+          <li>Structural Diagnostics & Repair Techniques</li>
+          <li>Industrial PEB Construction and Compliance</li>
+          <li>Case Studies, Project Timelines & BOQ Insights</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:28px">
+        <span class="section-tag">FAQ</span>
+        <div class="divider" style="width:40px"></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How often should I perform NDT on aging buildings?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>For buildings older than 15 years, schedule NDT every 3–5 years or after major events (floods, heavy rains, or structural alterations). We use UPV, rebound hammer and core testing to form a reliable diagnostic baseline.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is Form B and do you issue it?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Form B is the Structural Stability Certificate required under the Tamil Nadu Public Buildings Act. Morning Star is authorised to perform the inspection and issue Form B after a certified assessment.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you assist with CMDA / DTCP approvals and permits?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Yes. We prepare technical drawings, structural calculations and liaise with authorities to support CMDA/DTCP approvals. Approval fees are paid by the client, while we handle submissions and revisions.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Which cities and regions do you serve?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>We are Chennai-based and serve projects across Tamil Nadu including SIPCOT/industrial corridors. For larger out-of-state projects we provide feasibility consulting and partner execution support.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What warranty do you provide on constructions and fitouts?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>We provide a 5-year Defect Liability Bond for structural works (RERA-aligned) and manufacturer-backed warranties for interior fittings per the package selected.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do your home construction packages differ?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Our packages vary by materials, finishes and inclusions—from Basic (value-focused) to Green Eco (solar-ready, IGBC consultation). Every package details materials, BOQ and inclusions to eliminate hidden costs.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Can you perform full turnkey interior fitouts for existing homes?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Yes. We handle site measurement, 3D design, in-house manufacturing and full installation for resale apartments, new homes, and commercial premises.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is PEB and do you build PEB structures?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>PEB stands for Pre-Engineered Building. We deliver PEB structures for warehouses and factories with engineered steel frames, fast assembly and compliance for industrial clients.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do you price structural repair and retrofitting?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>After a diagnostic survey and NDT, we produce a repair methodology and transparent BOQ. Pricing is itemised (materials, labour, supervision) and presented before work begins.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you subcontract specialist trades?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>We maintain preferred subcontractors for electrical, HVAC and specialised services, but core structural and interior works are executed or directly supervised by our teams to ensure quality control.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What materials and brands do you use?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>We specify industry-leading materials: ARS / Tata TMT, Ramco / Dalmia cement, premium sanitary brands and certified electrical fittings. All brands are listed in project BOQs for client review.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do change requests during construction get handled?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Change requests are managed via documented variation orders with revised BOQ and timelines. We require sign-off and any incremental payment terms before proceeding.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>What is your project supervision model?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Every project is assigned a Project Manager and a registered structural engineer who perform regular site audits, quality checks and milestone sign-offs to ensure engineering compliance and schedule adherence.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How do I request a quote or site assessment?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Use the "Get a Free Quote" button or the WhatsApp quick-link. Provide site location, approximate built-up area and preferred timeline; we respond with a site-assessment schedule within 24 hours.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>Do you provide sustainability / green building options?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Yes. Our Green Eco package includes solar-ready roofs, rainwater harvesting and energy-efficient glazing. We also advise on IGBC-friendly specifications for clients seeking certification.</p></div></div>
+        <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)"><span>How is safety managed on site?</span><span class="faq-icon">+</span></div><div class="faq-a"><p>Safety is enforced via toolbox talks, PPE requirements, periodic inspections and documented method statements for high-risk activities. We maintain insurance and incident reporting as part of our site governance.</p></div></div>
+      </div>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Morning Star Infra Projects Blog",
+        "url": "https://yourdomain.example/",
+        "description": "Articles and guides on home construction, structural repair, interiors and industrial construction from Morning Star's engineering team.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Morning Star Infra Projects",
+          "logo": {"@type":"ImageObject","url":"https://yourdomain.example/images/hero_brand.png"}
+        }
+      }
+      </script>
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"><div class="container">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <div class="logo-link" style="display:flex;align-items:center;gap:8px;justify-content:flex-start">
+ <div class="logo-icon">
+ <img src="images/footer%20logo.jpeg" alt="Morning Star Infra Projects Logo" style="width:44px;height:44px;object-fit:contain"/>
+ </div>
+ <div class="logo-text" style="align-items:flex-start;justify-content:center;text-align:left;margin:0">
+ <span class="logo-main" style="color:white;font-size:24px">MORNING STAR</span>
+ <span class="logo-sub" style="color:rgba(255,255,255,.6);font-size:11px">INFRA PROJECTS</span>
+ </div>
+ </div>
+ <p><span style="font-size:1.05rem;font-weight:700">A complete ecosystem of structural excellence</span> — home construction, interiors, structural repair, and industrial PEB construction. Serving Chennai and Tamil Nadu since 2009.</p>
+ </div>
+ <div class="footer-quick">
+ <div class="footer-head">Quick Links</div>
+ <ul class="footer-links footer-links-right">
+ <li><a onclick="navigate('home')">Home</a></li>
+ <li><a onclick="navigate('story')">Our Story</a></li>
+ <li><a onclick="navigate('certifications')">Certifications</a></li>
+ <li><a onclick="navigate('blog')">Blog</a></li>
+ <li><a onclick="openModal()">Get a Quote</a></li>
+ </ul>
+ </div>
+ <div>
+ <div class="footer-head">Our Divisions</div>
+ <ul class="footer-links">
+ <li><a onclick="navigate('residential')">Home Construction</a></li>
+ <li><a onclick="navigate('interiors')">Interior Fitouts</a></li>
+ <li><a onclick="navigate('structural')">Structural Repair</a></li>
+ <li><a onclick="navigate('industrial')">Commercial & Industrial</a></li>
+ </ul>
+ </div>
+ <div>
+ <div class="footer-head">Contact Us</div>
+ <div class="contact-item"><span class="contact-icon"><i data-lucide="phone"></i></span><span>+91 97890 32139</span></div>
+ <div class="contact-item"><span class="contact-icon"><i data-lucide="message-circle"></i></span><span>+91 97890 32139 (WhatsApp)</span></div>
+ <div class="contact-item"><span class="contact-icon"><i data-lucide="mail"></i></span><span>morningstarinfra@gmail.com</span></div>
+ <div class="contact-item"><span class="contact-icon"><i data-lucide="map-pin"></i></span><a href="https://maps.app.goo.gl/8Te41ok2tsKTcZKs9?g_st=aw" target="_blank" rel="noopener noreferrer">Chennai, Tamil Nadu</a></div>
+ <div style="margin-top:16px;display:flex;gap:12px">
+ <a href="https://wa.me/919789032139" target="_blank" style="background:#25d366;color:white;padding:10px 16px;border-radius:8px;font-size:12px;font-weight:600"> WhatsApp</a>
+ <a href="tel:+919789032139" style="background:var(--primary);color:white;padding:10px 16px;border-radius:8px;font-size:12px;font-weight:600"> Call Now</a>
+ </div>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <div class="footer-copy">© 2026 Morning Star Infra Projects. All rights reserved. | Chennai, Tamil Nadu</div>
+ <div class="footer-copy">Registered Structural Engineers · Form B & Form C Authority</div>
+ </div>
+</div></footer>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/919789032139?text=Hello%20Morning%20Star%20Infra%20Projects" target="_blank" class="fab fab-wa" id="fab-wa" aria-label="WhatsApp">
+ <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<a href="tel:+919789032139" class="fab fab-call" id="fab-call" aria-label="Call">
+ <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+</a>
+
+<!-- QUOTE MODAL -->
+<div id="quote-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Request a Quote">
+ <div class="modal-box">
+ <button class="modal-close" id="modal-close" aria-label="Close"></button>
+ <h2 class="modal-title">Get a Free Quote</h2>
+ <p class="modal-sub">Our engineering team will respond within 24 hours.</p>
+ <form id="quote-form" class="quote-form" novalidate>
+ <div class="form-row">
+ <input type="text" id="qf-name" placeholder="Your Full Name" required/>
+ <input type="tel" id="qf-phone" placeholder="Phone / WhatsApp" required/>
+ </div>
+ <input type="email" id="qf-email" placeholder="Email Address"/>
+ <select id="qf-service">
+ <option value="">Select Service Required</option>
+ <option>Home Construction</option>
+ <option>Interior Fitouts</option>
+ <option>Structural Repair & Retrofitting</option>
+ <option>Commercial / Industrial Construction</option>
+ <option>Other / Multiple Services</option>
+ </select>
+ <textarea id="qf-msg" rows="3" placeholder="Brief description of your project (location, size, timeline)"></textarea>
+ <button type="submit" class="btn-primary btn-full">Submit Request →</button>
+ </form>
+ </div>
+</div>
+
+<script id="ms-script">// PAGE ROUTER
+const pages = ['home','residential','interiors','structural','industrial','story','certifications','blog'];
+function navigate(page) {
+ pages.forEach(p => {
+ const el = document.getElementById('page-'+p);
+ if(el) el.classList.remove('active');
+ });
+ const target = document.getElementById('page-'+page);
+ if(target) {
+ target.classList.add('active');
+ window.scrollTo({top:0,behavior:'instant'});
+ }
+ // Update nav active state
+ document.querySelectorAll('.nav-link,[data-page]').forEach(el => {
+ el.classList.remove('active');
+ if(el.dataset.page === page) el.classList.add('active');
+ });
+ // Close mobile menu
+ document.getElementById('mobile-menu').classList.remove('open');
+}
+
+// BIND NAV LINKS
+document.querySelectorAll('[data-page]').forEach(el => {
+ el.addEventListener('click', function(e) {
+ e.preventDefault();
+ navigate(this.dataset.page);
+ });
+});
+
+// BIND MOBILE LINKS
+document.querySelectorAll('.mob-link').forEach(el => {
+ el.addEventListener('click', function(e) {
+ e.preventDefault();
+ navigate(this.dataset.page);
+ });
+});
+
+// HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => {
+ mobileMenu.classList.toggle('open');
+});
+
+// HEADER SCROLL
+window.addEventListener('scroll', () => {
+ const hdr = document.getElementById('site-header');
+ if(window.scrollY > 20) hdr.classList.add('scrolled');
+ else hdr.classList.remove('scrolled');
+});
+
+// MODAL
+function openModal() {
+ document.getElementById('quote-modal').classList.add('open');
+ document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+ document.getElementById('quote-modal').classList.remove('open');
+ document.body.style.overflow = '';
+}
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('quote-modal').addEventListener('click', function(e) {
+ if(e.target === this) closeModal();
+});
+document.getElementById('quote-form').addEventListener('submit', function(e) {
+ e.preventDefault();
+ const name = document.getElementById('qf-name').value.trim();
+ const phone = document.getElementById('qf-phone').value.trim();
+ if(!name || !phone) { alert('Please fill in your name and phone number.'); return; }
+ const msg = encodeURIComponent(`Hello Morning Star Infra Projects!\n\nName: ${name}\nPhone: ${phone}\nService: ${document.getElementById('qf-service').value}\nMessage: ${document.getElementById('qf-msg').value}`);
+ window.open(`https://wa.me/919789032139?text=${msg}`, '_blank');
+ closeModal();
+});
+
+// FAQ ACCORDION
+function toggleFaq(el) {
+ const item = el.parentElement;
+ const isOpen = item.classList.contains('open');
+ document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+ if(!isOpen) item.classList.add('open');
+}
+
+// KEYBOARD ESC closes modal
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+// IMAGE PRELOADER — loads all hero images into browser cache immediately
+(function preloadHeroImages(){
+  const imgs = [
+    'images/hero_home.png',
+    'images/home%20construction%202.png',
+    'images/hero_interiors.png',
+    'images/hero_structural.png',
+    'images/hero_industrial.png'
+  ];
+  imgs.forEach(src => {
+    const img = new Image();
+    img.decoding = 'async';
+    img.src = src;
+  });
+})();
+
+// MOBILE DIVISION SLIDER
+(function initDivisionSlider(){
+ const track = document.querySelector('.div-tabs');
+ const slider = document.getElementById('divisions-slider');
+ if(!track || !slider) return;
+
+ const isMobileSliderMode = () => window.matchMedia('(max-width: 720px)').matches;
+
+ const syncSliderFromScroll = () => {
+  if(!isMobileSliderMode()) return;
+  const maxScroll = track.scrollWidth - track.clientWidth;
+  if(maxScroll <= 0){
+   slider.value = '0';
+   slider.disabled = true;
+   return;
+  }
+  slider.disabled = false;
+  const ratio = track.scrollLeft / maxScroll;
+  slider.value = String(Math.round(Math.max(0, Math.min(1000, ratio * 1000))));
+ };
+
+ const syncScrollFromSlider = () => {
+  if(!isMobileSliderMode()) return;
+  const maxScroll = track.scrollWidth - track.clientWidth;
+  if(maxScroll <= 0) return;
+  const ratio = Number(slider.value) / 1000;
+  track.scrollTo({left:ratio * maxScroll, behavior:'smooth'});
+ };
+
+ slider.addEventListener('input', syncScrollFromSlider);
+ track.addEventListener('scroll', syncSliderFromScroll, {passive:true});
+ window.addEventListener('resize', syncSliderFromScroll);
+ syncSliderFromScroll();
+})();
+
+</script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
