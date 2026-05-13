@@ -670,16 +670,8 @@ a{text-decoration:none;color:inherit}
  </div>
  </div>
  </div>
- <div class="div-slider-mobile" aria-label="Division slider position">
-  <div class="div-slider-arrows">
-   <button class="div-slider-arrow" id="div-arrow-prev" aria-label="Previous division">←</button>
-  </div>
-  <div class="div-slider-track">
-   <input type="range" id="divisions-slider" min="0" max="1000" value="0" aria-label="Slide through divisions"/>
-  </div>
-  <div class="div-slider-arrows">
-   <button class="div-slider-arrow" id="div-arrow-next" aria-label="Next division">→</button>
-  </div>
+ <div id="division-carousel-track" aria-label="Division carousel position" style="margin-top:28px;margin-bottom:0;background:rgba(10,31,68,.15);height:3px;border-radius:999px;position:relative;overflow:hidden;width:100%;cursor:pointer">
+  <div class="division-carousel-fill" aria-hidden="true" style="position:absolute;left:0;top:0;height:100%;background:var(--primary);border-radius:999px;width:0%;transition:width .12s linear;pointer-events:none"></div>
  </div>
  </div>
 </div>
@@ -1786,38 +1778,37 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   });
 })();
 
-// DIVISION SLIDER — always-on horizontal scroll with slider + arrows + drag
+// DIVISION SLIDER — always-on horizontal scroll with position line and drag
 (function initDivisionSlider(){
  const track = document.getElementById('div-tabs-track');
- const slider = document.getElementById('divisions-slider');
- const prevBtn = document.getElementById('div-arrow-prev');
- const nextBtn = document.getElementById('div-arrow-next');
- const sliderTrack = document.querySelector('.div-slider-track');
- if(!track || !slider) return;
+ const progressTrack = document.getElementById('division-carousel-track');
+ const progressFill = document.querySelector('#division-carousel-track .division-carousel-fill');
+ if(!track || !progressTrack || !progressFill) return;
 
  // Update the progress fill CSS var
  const reduceMotion = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
- const updateFill = (ratio) => {
-  if(sliderTrack) sliderTrack.style.setProperty('--slider-pct', (ratio*100).toFixed(1)+'%');
- };
-
- const syncSliderFromScroll = () => {
+ const updateFill = () => {
   const maxScroll = track.scrollWidth - track.clientWidth;
-  if(maxScroll <= 0){ slider.value='0'; updateFill(0); return; }
+  if(maxScroll <= 0){ progressFill.style.width = '0%'; return; }
   const ratio = track.scrollLeft / maxScroll;
-  const val = Math.round(Math.max(0, Math.min(1000, ratio*1000)));
-  slider.value = String(val);
-  updateFill(ratio);
+  progressFill.style.width = (ratio * 100).toFixed(1) + '%';
  };
 
- const syncScrollFromSlider = (smooth) => {
+ const scrollToRatio = (ratio, smooth) => {
   const maxScroll = track.scrollWidth - track.clientWidth;
   if(maxScroll <= 0) return;
-  const ratio = Number(slider.value)/1000;
-  updateFill(ratio);
   const behavior = (!reduceMotion && smooth) ? 'smooth' : 'auto';
-  track.scrollTo({left: ratio*maxScroll, behavior});
+  track.scrollTo({left: ratio * maxScroll, behavior});
  };
+
+ progressTrack.addEventListener('click', (e) => {
+  const rect = progressTrack.getBoundingClientRect();
+  const ratio = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+  scrollToRatio(ratio, true);
+ });
+
+ track.addEventListener('scroll', updateFill, {passive:true});
+ window.addEventListener('resize', updateFill);
 
  // Scroll by one card width
  const scrollByCard = (dir) => {
@@ -1827,12 +1818,6 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   const behavior = reduceMotion ? 'auto' : 'smooth';
   track.scrollBy({left: dir*step, behavior});
  };
-
- slider.addEventListener('input', () => syncScrollFromSlider(false));
- track.addEventListener('scroll', syncSliderFromScroll, {passive:true});
- window.addEventListener('resize', syncSliderFromScroll);
- if(prevBtn) prevBtn.addEventListener('click', () => scrollByCard(-1));
- if(nextBtn) nextBtn.addEventListener('click', () => scrollByCard(1));
 
  // Mouse drag support
  let isDragging = false, startX = 0, startScrollLeft = 0, hasDragged = false;
@@ -1874,11 +1859,8 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
     if(target > maxScroll) target = maxScroll;
     const behaviorFocus = reduceMotion ? 'auto' : 'smooth';
     track.scrollTo({left: target, behavior: behaviorFocus});
-    // also update the slider fill to match the focused tab position
-    const ratio = target / maxScroll;
-    const val = Math.round(Math.max(0, Math.min(1000, ratio*1000)));
-    slider.value = String(val);
-    updateFill(ratio);
+    // also update the progress line to match the focused tab position
+    updateFill();
     // announce focus to screen readers
     const announceEl = document.getElementById('divisions-announce');
     if(announceEl){
@@ -1889,7 +1871,7 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   });
  });
 
- syncSliderFromScroll();
+ updateFill();
 })();
 
 // PRICING CAROUSEL — horizontal scroll with position indicator and drag support
