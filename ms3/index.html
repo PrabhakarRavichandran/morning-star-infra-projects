@@ -37,11 +37,11 @@ a{text-decoration:none;color:inherit}
 .hdr-center{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;align-self:center;margin-top:0;order:0;text-align:center;gap:8px}
 .logo-link{display:flex;align-items:center;text-decoration:none}
 .logo-icon{display:flex;align-items:center;justify-content:center}
-.logo-icon img{width:96px;height:96px;object-fit:contain}
+.logo-icon img{width:72px;height:72px;object-fit:contain}
 .logo-text{display:flex;flex-direction:column;line-height:1;align-items:center;justify-content:center;text-align:center;align-self:center;margin:0 auto}
 .logo-text span{color:var(--primary)}
-.logo-main{font-family:'Space Grotesk',sans-serif;font-size:52px;font-weight:700;letter-spacing:.05em}
-.logo-sub{font-family:'Space Mono',monospace;font-size:25px;font-weight:700;letter-spacing:.2em;opacity:.8;margin-top:4px}
+.logo-main{font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;letter-spacing:.05em}
+.logo-sub{font-family:'Space Mono',monospace;font-size:18px;font-weight:700;letter-spacing:.2em;opacity:.8;margin-top:4px}
 .hdr-nav{display:flex;align-items:center;justify-content:center;gap:4px;min-width:140px;flex:0 0 auto;order:0;flex-wrap:wrap}
 .nav-link{font-size:13px;font-weight:500;color:var(--text);padding:8px 12px;border-radius:8px;cursor:pointer;transition:var(--trans);white-space:nowrap;pointer-events:auto}
 .nav-link:hover,.nav-link.active{color:var(--primary);background:rgba(10,31,68,.06)}
@@ -183,7 +183,7 @@ a{text-decoration:none;color:inherit}
 .div-tab-num{font-family:'Space Mono',monospace;font-size:11px;color:var(--gold);letter-spacing:.2em;margin-bottom:12px;opacity:.8}
 .div-tab-title{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:10px}
 .div-tab-desc{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.5;margin-bottom:20px}
-.div-tab-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--primary);font-size:12px;font-weight:700;padding:10px 18px;border-radius:6px;transition:var(--trans);pointer-events:none}
+.div-tab-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:var(--primary);font-size:12px;font-weight:700;padding:10px 18px;border-radius:6px;transition:var(--trans);pointer-events:auto}
 .div-tab:hover .div-tab-cta{background:var(--white)}
 
 /* Division slider — clean minimal bar matching reference */
@@ -383,7 +383,7 @@ a{text-decoration:none;color:inherit}
  .footer-links a{font-size:0.8rem}
  .modal-box{padding:24px 16px}
  .warranty-num{font-size:2.5rem}
-}}
+}
 @media(max-width:480px){
  html{font-size:12px}
  .hdr-city{display:none}
@@ -423,6 +423,89 @@ a{text-decoration:none;color:inherit}
 .card-icon .lucide{width:28px;height:28px;color:var(--primary)}
 .badge-icon .lucide{width:15px;height:15px;vertical-align:middle}
 .contact-icon .lucide{width:17px;height:17px;color:var(--gold)}
+/* Additional responsive tweaks */
+@media(max-width:900px){
+  .hdr-inner{padding:8px 16px;gap:8px}
+  .hdr-nav{display:none}
+  .hamburger{display:flex}
+  .logo-icon img{width:56px;height:56px}
+  .logo-main{font-size:28px}
+  .logo-sub{font-size:14px}
+  #site-header{min-height:72px}
+  .page{padding-top:72px}
+  .nav-drop-menu{position:static;border:none;box-shadow:none;background:transparent;padding:0;min-width:auto}
+  .nav-dropdown .drop-link{padding:12px 16px;border-radius:0}
+}
+@media(max-width:520px){
+  .hero-content{padding:36px 20px;max-width:92%}
+  .hero-title{font-size:clamp(1.6rem,6vw,2.4rem)}
+  .hero-sub{font-size:0.95rem}
+  .btn-primary,.btn-secondary,.btn-purple{padding:10px 16px;font-size:13px}
+}
+/* Consolidated responsive rules */
+@media (max-width:1200px){
+  .pricing-grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .grid-3{grid-template-columns:repeat(2,1fr);gap:18px}
+  .grid-4{grid-template-columns:repeat(2,1fr);gap:18px}
+  .div-tab{flex:0 0 calc(45% - 12px)}
+}
+@media (max-width:900px){
+  .hdr-inner{padding:8px 16px;gap:8px}
+  .hdr-nav{display:none}
+  .hamburger{display:flex}
+  .logo-icon img{width:56px;height:56px}
+  .logo-main{font-size:32px}
+  .logo-sub{font-size:14px}
+  #site-header{min-height:72px}
+  .page{padding-top:72px}
+  .nav-drop-menu{position:static;border:none;box-shadow:none;background:transparent;padding:0;min-width:auto}
+  .nav-dropdown .drop-link{padding:12px 16px;border-radius:0}
+  .pricing-grid{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .grid-4{grid-template-columns:1fr}
+  .div-tab{flex:0 0 calc(80% - 12px)}
+  .div-tabs{gap:12px}
+
+/* Accessibility: visible focus and improved focus target behavior for division tabs */
+.div-tab:focus{outline:none}
+.div-tab:focus-visible{box-shadow:0 0 0 4px rgba(247,189,16,.15),0 0 0 2px var(--gold);border-radius:12px}
+.div-tab:focus .div-tab-cta{box-shadow:0 6px 18px rgba(10,31,68,.08)}
+  .mobile-menu{position:absolute;top:100%;left:0;right:0;width:100%;padding:12px 16px;background:var(--bg);box-shadow:0 8px 30px rgba(0,0,0,.08)}
+  .hamburger{width:48px;height:40px;align-items:center;justify-content:center}
+  .hamburger span{width:26px}
+  .hdr-center{flex-direction:row;gap:12px}
+  .hdr-left{flex:0 0 auto}
+  .hdr-center .logo-text{margin-left:8px}
+}
+@media (max-width:768px){
+  .hero-split-left{padding:32px 18px}
+  .hero-content{padding:28px 16px}
+  .hero{min-height:50vh}
+}
+@media (max-width:520px){
+  .hero-content{padding:24px 14px;max-width:92%}
+  .hero-title{font-size:clamp(1.6rem,6vw,2.4rem)}
+  .hero-sub{font-size:0.95rem}
+  .btn-primary,.btn-secondary,.btn-purple{padding:10px 16px;font-size:13px}
+  .logo-main{font-size:22px}
+  .logo-sub{font-size:12px}
+  .hdr-inner{padding:8px 12px}
+  .section{padding:28px 0}
+  .divider{width:48px}
+}
+/* Ensure images inside flexible containers don't overflow */
+.hero-bg, .div-tab-bg{background-size:cover;background-position:center}
+.gallery-item img, .hero-bg img{max-width:100%;height:auto}
+
+/* Scroll snapping for divisions */
+.div-tabs{scroll-snap-type:x mandatory;overflow-x:auto;padding-bottom:8px}
+.div-tab{scroll-snap-align:start}
+.div-tabs::-webkit-scrollbar{display:none}
+
+/* Small polish */
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important}
+}
 </style>
 
 </head>
@@ -510,13 +593,14 @@ a{text-decoration:none;color:inherit}
  <div class="container">
  <div style="text-align:center;padding:64px 0 40px">
  <span class="section-tag" style="color:var(--navy);font-size:1.15rem;font-weight:800;letter-spacing:.22em;display:block;margin-bottom:6px">FOCUS ON</span>
- <h2 class="section-title" style="margin:0 auto;color:var(--navy);font-size:clamp(2.2rem,4.8vw,4rem);font-weight:900">Our 4 Divisions</h2>
+ <h2 id="divisions-heading" class="section-title" style="margin:0 auto;color:var(--navy);font-size:clamp(2.2rem,4.8vw,4rem);font-weight:900">Our 4 Divisions</h2>
  <div class="divider" style="margin:16px auto 0"></div>
  <p class="section-sub" style="margin:18px auto 0;max-width:920px;color:var(--text);line-height:1.8">We offer this extensive range of services with one uncompromising guarantee: radical financial transparency. By eliminating hidden costs and fragmented contracting, we ensure every space is crafted safely, beautifully, and exactly to your vision.</p>
  </div>
  <div class="div-tabs-wrapper">
- <div class="div-tabs" id="div-tabs-track">
- <div class="div-tab" onclick="navigate('residential')" id="tab-residential">
+ <div id="divisions-announce" role="status" aria-live="polite" aria-atomic="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"></div>
+ <div class="div-tabs" id="div-tabs-track" role="region" aria-labelledby="divisions-heading" aria-roledescription="carousel">
+ <div class="div-tab" onclick="navigate('residential')" id="tab-residential" tabindex="0" role="group" aria-label="Division 1: Home Construction. Tax-compliant, engineering-led residential builds with 4 transparent pricing packages.">
  <div class="div-tab-bg" style="background-image:url('images/home%20construction.jpg')"></div>
  <div class="div-tab-content">
  <div class="div-tab-num">01 ·</div>
@@ -525,7 +609,7 @@ a{text-decoration:none;color:inherit}
  <span class="div-tab-cta">Explore →</span>
  </div>
  </div>
- <div class="div-tab" onclick="navigate('interiors')" id="tab-interiors">
+ <div class="div-tab" onclick="navigate('interiors')" id="tab-interiors" tabindex="0" role="group" aria-label="Division 2: Interior Fitouts. End-to-end bespoke interiors from 3D design to in-house manufacturing execution.">
  <div class="div-tab-bg" style="background-image:url('images/hero_interiors.png')"></div>
  <div class="div-tab-content">
  <div class="div-tab-num">02 ·</div>
@@ -534,7 +618,7 @@ a{text-decoration:none;color:inherit}
  <span class="div-tab-cta">Explore →</span>
  </div>
  </div>
- <div class="div-tab" onclick="navigate('structural')" id="tab-structural">
+ <div class="div-tab" onclick="navigate('structural')" id="tab-structural" tabindex="0" role="group" aria-label="Division 3: Structural Repair & Retrofitting. Advanced NDT diagnostics, carbon FRP wrapping, and lifespan extension for aging structures.">
  <div class="div-tab-bg" style="background-image:url('images/hero_structural.png')"></div>
  <div class="div-tab-content">
  <div class="div-tab-num">03 ·</div>
@@ -543,7 +627,7 @@ a{text-decoration:none;color:inherit}
  <span class="div-tab-cta">Explore →</span>
  </div>
  </div>
- <div class="div-tab" onclick="navigate('industrial')" id="tab-industrial">
+ <div class="div-tab" onclick="navigate('industrial')" id="tab-industrial" tabindex="0" role="group" aria-label="Division 4: Commercial & Industrial. Fast-track PEB construction built for SIPCOT industries, logistics & factory owners.">
  <div class="div-tab-bg" style="background-image:url('images/hero_industrial.png')"></div>
  <div class="div-tab-content">
  <div class="div-tab-num">04 ·</div>
@@ -582,7 +666,6 @@ a{text-decoration:none;color:inherit}
 <div class="hero">
  <div class="hero-bg" style="background-image:url('images/home%20construction%202.png')"></div>
  <div class="hero-content">
- <span class="hero-tag">HOME CONSTRUCTION · CHENNAI</span>
  <h1 class="hero-title">Commercial-Grade Engineering<br><span>with Residential Warmth</span></h1>
  <p class="hero-sub">Tax-compliant, engineering-led home construction. No hidden costs. CMDA/DTCP approval support included.</p>
  <div class="hero-btns">
@@ -746,7 +829,6 @@ a{text-decoration:none;color:inherit}
 <div class="hero">
  <div class="hero-bg" style="background-image:url('images/hero_interiors.png')"></div>
  <div class="hero-content">
- <span class="hero-tag">INTERIOR FITOUTS · ALL BUILDINGS</span>
  <h1 class="hero-title">End-to-End Bespoke Interiors.<br><span>3D Design to Execution.</span></h1>
  <p class="hero-sub">From concept to completion — in-house manufacturing, custom modular kitchens, wardrobes, false ceilings, and premium finishes. Open to all buildings, not just our constructions.</p>
  <div class="hero-btns">
@@ -887,7 +969,6 @@ a{text-decoration:none;color:inherit}
 <div class="hero">
  <div class="hero-bg" style="background-image:url('images/hero_structural.png')"></div>
  <div class="hero-content">
- <span class="hero-tag">STRUCTURAL REPAIR · B2B & B2C</span>
  <h1 class="hero-title">Advanced Structural Diagnostics<br><span>& Lifespan Extension</span></h1>
  <p class="hero-sub">Owning our own NDT equipment, Morning Star brings clinical precision to structural diagnosis — from rebound hammer testing to carbon FRP wrapping and full jacketing solutions.</p>
  <div class="hero-btns">
@@ -1023,12 +1104,11 @@ a{text-decoration:none;color:inherit}
 <div class="hero">
  <div class="hero-bg" style="background-image:url('images/hero_industrial.png')"></div>
  <div class="hero-content">
- <span class="hero-tag">COMMERCIAL & INDUSTRIAL · B2B</span>
  <h1 class="hero-title">Fast-Track PEB Construction.<br><span>Built for Scale & Compliance.</span></h1>
  <p class="hero-sub">Pre-Engineered Buildings completed in 4–8 months vs. 12–18 months traditional construction. Coordinated with equipment manufacturers for ergonomic, energy-efficient industrial plans.</p>
  <div class="hero-btns">
  <button class="btn-primary" onclick="openModal()">Request Free Warehouse Layout →</button>
- <a href="tel:+919789032139" class="btn-secondary"><i data-lucide="phone" style="width:16px;height:16px"></i> Talk to Our Industrial Team</a>
+ 
  </div>
  </div>
 </div>
@@ -1549,6 +1629,7 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
  if(!track || !slider) return;
 
  // Update the progress fill CSS var
+ const reduceMotion = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
  const updateFill = (ratio) => {
   if(sliderTrack) sliderTrack.style.setProperty('--slider-pct', (ratio*100).toFixed(1)+'%');
  };
@@ -1567,7 +1648,8 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   if(maxScroll <= 0) return;
   const ratio = Number(slider.value)/1000;
   updateFill(ratio);
-  track.scrollTo({left: ratio*maxScroll, behavior: smooth ? 'smooth' : 'instant'});
+  const behavior = (!reduceMotion && smooth) ? 'smooth' : 'auto';
+  track.scrollTo({left: ratio*maxScroll, behavior});
  };
 
  // Scroll by one card width
@@ -1575,7 +1657,8 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   const card = track.querySelector('.div-tab');
   const gap = 18;
   const step = card ? card.offsetWidth + gap : 300;
-  track.scrollBy({left: dir*step, behavior:'smooth'});
+  const behavior = reduceMotion ? 'auto' : 'smooth';
+  track.scrollBy({left: dir*step, behavior});
  };
 
  slider.addEventListener('input', () => syncScrollFromSlider(false));
@@ -1604,9 +1687,39 @@ document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal();
   isDragging = false;
   track.classList.remove('is-dragging');
  });
- // Prevent click firing after drag
+ // Prevent click firing after drag, enable keyboard activation, and scroll focused tab to center
  track.querySelectorAll('.div-tab').forEach(tab => {
   tab.addEventListener('click', (e) => { if(hasDragged){ e.stopImmediatePropagation(); hasDragged=false; } });
+  tab.addEventListener('keydown', (e) => {
+    if(e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar'){
+      e.preventDefault();
+      tab.click();
+    }
+  });
+  tab.addEventListener('focus', (e) => {
+    // center the focused tab in the track
+    const maxScroll = track.scrollWidth - track.clientWidth;
+    if(maxScroll <= 0) return;
+    const tabLeft = tab.offsetLeft;
+    const tabCenterOffset = (track.clientWidth - tab.offsetWidth) / 2;
+    let target = tabLeft - tabCenterOffset;
+    if(target < 0) target = 0;
+    if(target > maxScroll) target = maxScroll;
+    const behaviorFocus = reduceMotion ? 'auto' : 'smooth';
+    track.scrollTo({left: target, behavior: behaviorFocus});
+    // also update the slider fill to match the focused tab position
+    const ratio = target / maxScroll;
+    const val = Math.round(Math.max(0, Math.min(1000, ratio*1000)));
+    slider.value = String(val);
+    updateFill(ratio);
+    // announce focus to screen readers
+    const announceEl = document.getElementById('divisions-announce');
+    if(announceEl){
+      const tabTitle = tab.querySelector('.div-tab-title')?.textContent || 'Division';
+      const tabNum = tab.querySelector('.div-tab-num')?.textContent || '';
+      announceEl.textContent = `${tabNum} ${tabTitle} focused. Press Enter to explore.`;
+    }
+  });
  });
 
  syncSliderFromScroll();
